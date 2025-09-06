@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Technologies from './Technologies';
+import data from '../data/data.json'
 
 const NovapexPage = () => {
   const conferenceImage = "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
@@ -17,87 +18,11 @@ const NovapexPage = () => {
   const [statsIndex, setStatsIndex] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Slider hero data
-  const heroSlides = [
-    {
-      id: 1,
-      title: "Web Development Excellence",
-      subtitle: "Creating responsive, modern websites that drive results",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
-      cta: "View Portfolio"
-    },
-    {
-      id: 2,
-      title: "Mobile App Innovation",
-      subtitle: "Native and cross-platform applications for seamless user experiences",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      cta: "Explore Apps"
-    },
-    {
-      id: 3,
-      title: "UI/UX Design Mastery",
-      subtitle: "Intuitive interfaces that engage and convert your audience",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
-      cta: "See Designs"
-    }
-  ];
-
-  // Testimonial data
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "CTO, TechCorp Inc.",
-      content: "Novapex transformed our business operations. Their solutions helped us increase productivity by 40% in just three months.",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "Operations Director, Global Solutions",
-      content: "The implementation was seamless and the support team was exceptional. We've seen a 25% reduction in operational costs.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-    },
-    {
-      id: 3,
-      name: "Elena Rodriguez",
-      role: "CEO, Innovate Labs",
-      content: "Novapex's mobile app has been a game-changer for our remote teams. The intuitive interface and reliability are unmatched.",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1361&q=80"
-    }
-  ];
-
-  // Features data
-  const features = [
-    {
-      title: "Real-time Analytics",
-      description: "Access live data and insights to make informed decisions instantly.",
-      icon: "📊"
-    },
-    {
-      title: "Seamless Integration",
-      description: "Connect with your existing tools and workflows without disruption.",
-      icon: "🔌"
-    },
-    {
-      title: "Custom Workflows",
-      description: "Tailor processes to match your unique business requirements.",
-      icon: "🔄"
-    },
-    {
-      title: "Advanced Security",
-      description: "Enterprise-grade protection for your sensitive data and operations.",
-      icon: "🔒"
-    }
-  ];
-
-  // Stats data
-  const stats = [
-    { value: "97%", label: "Customer Satisfaction" },
-    { value: "3.5x", label: "Average ROI" },
-    { value: "40%", label: "Cost Reduction" },
-    { value: "24/7", label: "Support Availability" }
-  ];
+const {heroSlides }= data 
+const {testimonials} = data
+const {features}= data
+const {stats}=data
+  
 
   useEffect(() => {
     // Track mouse movement

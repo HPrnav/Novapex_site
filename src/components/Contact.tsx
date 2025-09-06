@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare, User, Building } from 'lucide-react';
+import data from '../data/data.json'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,19 +52,7 @@ const contactInfo = [
   }
 ];
 
-
-  const services = [
-    'Custom Software Development',
-    'Mobile App Development',
-    'Web Development',
-    'Cloud Solutions',
-    'UI/UX Design',
-    'Data Analytics',
-    'AI & Machine Learning',
-    'DevOps & Automation',
-    'Cybersecurity',
-    'Consulting Services'
-  ];
+const services= data.contact_services
 
   return (
 <section id="contact" className="py-20 bg-gray-50">

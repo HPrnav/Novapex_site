@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react';
-
-const Careers = () => {
+ 
+ const Careers = () => {
   const [isResumeDialogOpen, setIsResumeDialogOpen] = useState(false);
   const [isHRContactOpen, setIsHRContactOpen] = useState(false);
   const [resumeFile, setResumeFile] = useState<File | null>(null);

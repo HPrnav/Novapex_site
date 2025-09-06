@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import Blog from "./components/Blog"; // ✅ renamed to Blog (singular)
-import Cursor from "./components/Cursor"; // import cursor component
+import BlogDetail from "./components/BlogDetail";
 
 // Component to handle route changes
 const RouteChangeHandler = ({ children }) => {
@@ -47,6 +47,8 @@ function App() {
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} /> {/* ✅ Blog route added */}
+              <Route path="blog/:id" element={<BlogDetail />} />
+
             </Routes>
           </main>
           <Footer />

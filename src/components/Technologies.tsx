@@ -8,9 +8,9 @@ import {
   FaCss3Alt,
   FaAndroid,
   FaGithub,
-  FaDocker,
+  FaDocker
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiKotlin, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiMysql, SiTypescript,SiSpringboot, SiSupabase } from "react-icons/si";
 
 const techRows = [
   [
@@ -18,7 +18,9 @@ const techRows = [
     { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind" },
     { icon: <FaNodeJs className="text-green-500" />, name: "Node.js" },
     { icon: <SiMongodb className="text-green-400" />, name: "MongoDB" },
-    { icon: <FaGithub className="text-gray-800 dark:text-white" />, name: "GitHub" },
+    { icon: <FaGithub className="text-gray-800 " />, name: "GitHub" },
+    { icon: <SiSpringboot className="text-green-400" />, name: "Springboot" },
+    { icon: <SiSupabase className="text-red-800 " />, name: "Supabase" },
   ],
   [
     { icon: <FaJava className="text-red-600" />, name: "Java" },
@@ -29,7 +31,7 @@ const techRows = [
   ],
   [
     { icon: <FaAndroid className="text-green-600" />, name: "Android" },
-    { icon: <SiKotlin className="text-purple-500" />, name: "Kotlin" },
+    { icon: <SiMysql className="text- blue-500" />, name: "MySql" },
     { icon: <FaDocker className="text-blue-400" />, name: "Docker" },
     { icon: <FaReact className="text-cyan-400" />, name: "React Native" },
     { icon: <FaGithub className="text-gray-800 dark:text-white" />, name: "CI/CD" },

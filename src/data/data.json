@@ -1,0 +1,946 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "icon": "Globe",
+      "title": "Website Development",
+      "description": "Professional, responsive websites built with modern technologies to establish your online presence.",
+      "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/114907/pexels-photo-114907.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Responsive design for all devices",
+          "SEO optimization",
+          "Fast loading times",
+          "Content management system",
+          "E-commerce functionality"
+        ],
+        "process": [
+          "Requirement analysis",
+          "Design mockups",
+          "Development",
+          "Testing",
+          "Deployment"
+        ],
+        "timeline": "2-6 weeks",
+        "pricing": "Starting at $999",
+        "technologies": ["React", "Next.js", "WordPress", "Shopify"],
+        "benefits": [
+          "Increased online visibility",
+          "24/7 customer accessibility",
+          "Professional brand image",
+          "Higher conversion rates"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "icon": "Code",
+      "title": "Customized Development",
+      "description": "Tailored software solutions designed to meet your specific business requirements and workflows.",
+      "image": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Custom functionality",
+          "Scalable architecture",
+          "Database integration",
+          "API development",
+          "Third-party integrations"
+        ],
+        "process": [
+          "Business analysis",
+          "Technical specification",
+          "Agile development",
+          "Quality assurance",
+          "Maintenance support"
+        ],
+        "timeline": "4-12 weeks",
+        "pricing": "Starting at $2,500",
+        "technologies": ["Node.js", "Python", ".NET", "Java"],
+        "benefits": [
+          "Streamlined business processes",
+          "Competitive advantage",
+          "Reduced operational costs",
+          "Future-proof solutions"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "icon": "Smartphone",
+      "title": "Mobile Application",
+      "description": "Native and cross-platform mobile applications for iOS and Android with intuitive interfaces.",
+      "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1440727/pexels-photo-1440727.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/2148217/pexels-photo-2148217.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "iOS and Android compatibility",
+          "Intuitive user interface",
+          "Offline functionality",
+          "Push notifications",
+          "App store deployment"
+        ],
+        "process": [
+          "UI/UX design",
+          "Development",
+          "Testing on devices",
+          "App store submission",
+          "Post-launch updates"
+        ],
+        "timeline": "6-16 weeks",
+        "pricing": "Starting at $3,500",
+        "technologies": ["React Native", "Flutter", "Swift", "Kotlin"],
+        "benefits": [
+          "Direct customer engagement",
+          "Increased brand loyalty",
+          "New revenue streams",
+          "Enhanced user experience"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "icon": "Palette",
+      "title": "Graphic Designing",
+      "description": "Creative visual designs for branding, marketing materials, and digital interfaces.",
+      "image": "https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/157888/fashion-glasses-go-pro-female-157888.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Logo design",
+          "Brand identity",
+          "Marketing materials",
+          "Social media graphics",
+          "Print design"
+        ],
+        "process": [
+          "Creative briefing",
+          "Concept development",
+          "Design presentation",
+          "Revisions",
+          "Final delivery"
+        ],
+        "timeline": "1-3 weeks",
+        "pricing": "Starting at $299",
+        "technologies": ["Adobe Photoshop", "Illustrator", "InDesign", "Figma"],
+        "benefits": [
+          "Strong brand recognition",
+          "Professional appearance",
+          "Increased credibility",
+          "Better marketing results"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "icon": "Video",
+      "title": "Animation",
+      "description": "Engaging motion graphics and animations to captivate your audience and explain complex ideas.",
+      "image": "https://images.pexels.com/photos/5239920/pexels-photo-5239920.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/5380586/pexels-photo-5380586.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/5380588/pexels-photo-5380588.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "2D/3D animation",
+          "Explainer videos",
+          "Motion graphics",
+          "Character animation",
+          "Visual effects"
+        ],
+        "process": [
+          "Script/storyboard",
+          "Voiceover recording",
+          "Animation production",
+          "Sound design",
+          "Final rendering"
+        ],
+        "timeline": "2-5 weeks",
+        "pricing": "Starting at $499",
+        "technologies": ["After Effects", "Blender", "Cinema 4D", "Maya"],
+        "benefits": [
+          "Higher engagement rates",
+          "Complex concept simplification",
+          "Memorable content",
+          "Increased conversion rates"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "icon": "FileText",
+      "title": "Content Writing",
+      "description": "Compelling, SEO-optimized content that engages readers and drives conversions.",
+      "image": "https://images.pexels.com/photos/7369/startup-photos.jpg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/159866/pexels-photo-159866.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "SEO optimization",
+          "Blog articles",
+          "Website copy",
+          "Product descriptions",
+          "Social media content"
+        ],
+        "process": [
+          "Topic research",
+          "Keyword analysis",
+          "Content creation",
+          "Editing/proofreading",
+          "SEO implementation"
+        ],
+        "timeline": "1-2 weeks",
+        "pricing": "Starting at $99",
+        "technologies": ["Grammarly", "SEMrush", "Ahrefs", "Google Trends"],
+        "benefits": [
+          "Improved search rankings",
+          "Establishing authority",
+          "Increased traffic",
+          "Better customer education"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "icon": "TrendingUp",
+      "title": "Digital Marketing",
+      "description": "Comprehensive online marketing strategies to increase visibility and drive business growth.",
+      "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Social media marketing",
+          "PPC advertising",
+          "Email campaigns",
+          "Content strategy",
+          "Analytics reporting"
+        ],
+        "process": [
+          "Strategy development",
+          "Campaign setup",
+          "Content creation",
+          "Performance monitoring",
+          "Optimization"
+        ],
+        "timeline": "Ongoing",
+        "pricing": "Starting at $499/month",
+        "technologies": ["Google Ads", "Facebook Ads", "HubSpot", "Google Analytics"],
+        "benefits": [
+          "Targeted audience reach",
+          "Measurable results",
+          "Higher ROI",
+          "Brand awareness"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "icon": "MessageCircle",
+      "title": "SMS Marketing",
+      "description": "Direct and effective SMS campaigns to reach customers instantly with high open rates.",
+      "image": "https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/3568521/pexels-photo-3568521.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/3568523/pexels-photo-3568523.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Bulk messaging",
+          "Personalized texts",
+          "Automated campaigns",
+          "Subscriber management",
+          "Delivery reports"
+        ],
+        "process": [
+          "Audience segmentation",
+          "Message creation",
+          "Compliance check",
+          "Campaign execution",
+          "Performance analysis"
+        ],
+        "timeline": "1-3 days setup",
+        "pricing": "Pay-per-message or monthly plans",
+        "technologies": ["Twilio", "Plivo", "MessageBird", "Nexmo"],
+        "benefits": [
+          "High open rates",
+          "Immediate delivery",
+          "Personal communication",
+          "Time-sensitive promotions"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "icon": "Mail",
+      "title": "Email Marketing",
+      "description": "Targeted email campaigns that nurture leads and maintain customer relationships.",
+      "image": "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "additionalImages": [
+        "https://images.pexels.com/photos/14933699/pexels-photo-14933699.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/14933701/pexels-photo-14933701.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/14933702/pexels-photo-14933702.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "details": {
+        "features": [
+          "Newsletter design",
+          "Automation workflows",
+          "List segmentation",
+          "A/B testing",
+          "Performance analytics"
+        ],
+        "process": [
+          "Template design",
+          "List building",
+          "Campaign setup",
+          "Testing",
+          "Deployment & analysis"
+        ],
+        "timeline": "1-2 weeks setup",
+        "pricing": "Starting at $199/month",
+        "technologies": ["Mailchimp", "Constant Contact", "SendinBlue", "ActiveCampaign"],
+        "benefits": [
+          "Cost-effective marketing",
+          "Personalized communication",
+          "Lead nurturing",
+          "High ROI potential"
+        ]
+      }
+    }
+  ]
+    ,
+     "projectCategories" :[
+    "All",
+    "Restaurant",
+    "Gym",
+    "Education",
+    "Service",
+    "E-commerce",
+    "Booking"
+  ]
+    ,
+ "projects": [
+    {
+      "id": 1,
+      "title": "Restaurant Platform",
+      "category": "Restaurant",
+      "description": "A complete digital solution for restaurants with online food ordering, table booking, and kitchen management.",
+      "image": "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Razorpay"],
+      "duration": "3 months",
+      "team": "4 developers",
+      "features": ["Online Ordering", "Table Reservations", "Kitchen Dashboard", "Delivery Tracking"],
+      "detailedInfo": {
+        "overview": "Foodiez is a modern restaurant platform that enables customers to order food online, reserve tables, and track their deliveries in real-time while helping restaurants manage operations efficiently.",
+        "challenge": "Restaurants faced challenges with handling phone-based orders, limited visibility into table availability, and poor coordination between front-office and kitchen staff.",
+        "solution": "We developed a robust system with online ordering, table booking, real-time kitchen dashboards, and delivery tracking to streamline the entire workflow.",
+        "workflow": [
+          "Requirement Analysis",
+          "Menu & Ordering System",
+          "Table Booking Module",
+          "Kitchen Management Dashboard",
+          "Payment Gateway Integration",
+          "Delivery Tracking Setup",
+          "Testing & QA",
+          "Deployment & Support"
+        ],
+        "keyFeatures": [
+          { "title": "Online Food Ordering", "description": "Easy menu browsing, customization, and online order placement" },
+          { "title": "Table Reservations", "description": "Customers can book tables in advance with live availability" },
+          { "title": "Kitchen Dashboard", "description": "Real-time order updates and status tracking for chefs" },
+          { "title": "Delivery Tracking", "description": "Track food delivery with live status updates" }
+        ],
+        "results": [
+          { "value": "60%", "label": "Increase in online orders" },
+          { "value": "2x", "label": "Faster table turnovers" },
+          { "value": "35%", "label": "Reduction in order errors" },
+          { "value": "4.8/5", "label": "Customer satisfaction score" }
+        ],
+        "testimonials": [
+          {
+            "quote": "Foodiez transformed our restaurant operations. Online orders doubled and our table reservations are now fully automated.",
+            "author": "Priya Sharma, Restaurant Owner"
+          },
+          {
+            "quote": "The kitchen dashboard helped us reduce errors and serve faster. Our chefs love it!",
+            "author": "Rahul Verma, Head Chef"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Citi Offers - E-commerce Platform",
+      "category": "E-commerce",
+      "description": "A next-gen e-commerce marketplace offering a wide range of products, fast delivery, secure payments, and personalized shopping experiences.",
+      "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Stripe", "AWS"],
+      "duration": "6 months",
+      "team": "8 developers",
+      "features": ["Product Catalog", "Personalized Recommendations", "Cart & Checkout", "Order Tracking", "Vendor Dashboard"],
+      "detailedInfo": {
+        "overview": "Citi Offers is a robust e-commerce marketplace built to deliver a seamless shopping experience, connecting buyers and sellers with secure, scalable, and feature-rich digital tools.",
+        "challenge": "Customers demanded a reliable online shopping solution with a smooth user interface, quick order processing, and a wide variety of products. Existing platforms lacked personalization and vendor-friendly tools.",
+        "solution": "We designed and developed a scalable multi-vendor platform with personalized shopping, AI-driven product recommendations, and streamlined logistics integration.",
+        "workflow": [
+          "Market Research & Competitor Analysis",
+          "Product Catalog & Vendor Integration",
+          "Shopping Cart & Secure Payments",
+          "AI Recommendation System",
+          "Order Tracking Development",
+          "Mobile App Development",
+          "Logistics & Delivery Integration",
+          "Launch & Ongoing Support"
+        ],
+        "keyFeatures": [
+          { "title": "Smart Product Catalog", "description": "Organized product listings with advanced filters and search" },
+          { "title": "Personalized Recommendations", "description": "AI-powered suggestions tailored to user preferences" },
+          { "title": "Order Tracking", "description": "Real-time updates on shipment and delivery status" },
+          { "title": "Vendor Dashboard", "description": "Tools for sellers to manage inventory, pricing, and promotions" }
+        ],
+        "results": [
+          { "value": "1M+", "label": "Active Users within first year" },
+          { "value": "50K+", "label": "Orders processed monthly" },
+          { "value": "30%", "label": "Increase in vendor revenue" },
+          { "value": "4.8/5", "label": "Average customer satisfaction score" }
+        ],
+        "testimonials": [
+          {
+            "quote": "Citi Offers transformed our online shopping experience. The speed, recommendations, and tracking are on par with global giants.",
+            "author": "Ramesh Patel, Vendor Partner"
+          },
+          {
+            "quote": "I switched from other e-commerce apps to Citi Offers – the personalized deals and fast delivery are unbeatable!",
+            "author": "Priya Sharma, Customer"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "FitTrack Gym Management System",
+      "category": "Gym",
+      "description": "A comprehensive gym management platform with member tracking, class scheduling, workout analytics, and payment processing.",
+      "image": "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Node.js", "Stripe", "MongoDB"],
+      "duration": "4 months",
+      "team": "5 developers",
+      "features": ["Member Management", "Class Scheduling", "Workout Tracking", "Progress Analytics"],
+      "detailedInfo": {
+        "overview": "An all-in-one gym management solution that helps fitness centers streamline operations, enhance member experience, and track performance metrics with digital tools.",
+        "challenge": "Gyms were struggling with manual member management, inefficient class scheduling, and lacked tools to track member progress and engagement.",
+        "solution": "We developed a comprehensive system with member portals, trainer dashboards, real-time class scheduling, and detailed workout analytics.",
+        "workflow": [
+          "Gym Requirements Analysis",
+          "Member Management System Design",
+          "Class Scheduling Integration",
+          "Workout Tracking Development",
+          "Payment Processing Setup",
+          "Mobile App Development",
+          "Staff Training & Onboarding",
+          "Launch & Support"
+        ],
+        "keyFeatures": [
+          { "title": "Member Portal", "description": "Personalized dashboards with workout history, progress tracking, and payment management" },
+          { "title": "Class Scheduling", "description": "Real-time class booking with capacity management and waitlist features" },
+          { "title": "Workout Analytics", "description": "Detailed performance metrics and visual progress tracking" },
+          { "title": "Trainer Dashboard", "description": "Tools for client management and personalized workout plans" }
+        ],
+        "results": [
+          { "value": "90%", "label": "Member retention rate" },
+          { "value": "3x", "label": "More class bookings" },
+          { "value": "40%", "label": "Reduced administrative work" },
+          { "value": "4.9/5", "label": "Member satisfaction score" }
+        ],
+        "testimonials": [
+          {
+            "quote": "FitTrack revolutionized how we manage our gym. Member engagement has never been higher and our staff spends 60% less time on admin tasks.",
+            "author": "Sarah Johnson, Gym Owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "EduConnect School Portal",
+      "category": "Education",
+      "description": "Complete school management system with public website, parent portal, teacher dashboard, and administrative ERP features.",
+      "image": "https://images.pexels.com/photos/4144225/pexels-photo-4144225.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Node.js", "PostgreSQL", "AWS", "JWT Auth"],
+      "duration": "6 months",
+      "team": "8 developers",
+      "features": [
+        "School Website CMS",
+        "ERP Login System",
+        "Grade Management",
+        "Attendance Tracking",
+        "Fee Payment Portal",
+        "Parent-Teacher Communication"
+      ],
+      "detailedInfo": {
+        "overview": "A comprehensive education platform combining a modern school website with a powerful ERP system for complete school administration, student management, and parent engagement.",
+        "challenge": "Schools needed an integrated solution that combined their public-facing website with secure internal management tools while maintaining data consistency across platforms.",
+        "solution": "Developed a unified platform with role-based access (admin, teacher, student, parent) connecting the public website with backend ERP functionality through a secure login system.",
+        "workflow": [
+          "Stakeholder interviews with school administrators",
+          "User journey mapping for all roles",
+          "Public website CMS development",
+          "ERP backend architecture",
+          "Role-based authentication system",
+          "Grade and attendance modules",
+          "Payment gateway integration",
+          "Training and deployment"
+        ],
+        "keyFeatures": [
+          { "title": "School Website", "description": "Customizable CMS for school information, news, and event management" },
+          { "title": "ERP Login System", "description": "Secure multi-role authentication with SSO capabilities" },
+          { "title": "Admin Dashboard", "description": "Complete school management with student records, staff management, and reporting" },
+          { "title": "Parent Portal", "description": "Real-time access to grades, attendance, and school communications" },
+          { "title": "Teacher Workspace", "description": "Grade submission, attendance marking, and lesson planning tools" },
+          { "title": "Fee Management", "description": "Online payment processing with receipts and payment history" }
+        ],
+        "results": [
+          { "value": "75%", "label": "Reduction in administrative workload" },
+          { "value": "95%", "label": "Parent engagement rate" },
+          { "value": "100+", "label": "Schools implemented" },
+          { "value": "4.9/5", "label": "User satisfaction score" }
+        ],
+        "testimonials": [
+          {
+            "quote": "EduConnect transformed how our school operates. The seamless integration between our website and management system saved us countless hours.",
+            "author": "Dr. Robert Johnson, School Principal"
+          },
+          {
+            "quote": "As a parent, I love being able to see my child's progress in real-time through the portal.",
+            "author": "Lisa Thompson, Parent"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "CleanPro Manpower Services",
+      "category": "Service",
+      "description": "On-demand housekeeping and manpower service platform connecting clients with professional cleaners and service providers.",
+      "image": "https://images.pexels.com/photos/5081392/pexels-photo-5081392.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Node.js", "MongoDB", "Google Maps API", "Twilio"],
+      "duration": "5 months",
+      "team": "5 developers",
+      "features": ["Service Booking System", "Worker Management", "Real-time Tracking", "Quality Assurance", "Payment Processing", "Client Portal"],
+      "detailedInfo": {
+        "overview": "A complete digital solution for housekeeping and manpower services that streamlines booking, dispatching, and quality control for service businesses.",
+        "challenge": "Service providers struggled with manual booking processes, inefficient worker dispatch, and lacked transparency for clients about service status.",
+        "solution": "Developed a mobile-friendly platform with real-time booking, GPS tracking of workers, quality assurance checks, and automated payment processing.",
+        "workflow": [
+          "Service provider interviews",
+          "Booking flow design",
+          "Worker management system",
+          "Real-time tracking integration",
+          "Quality control features",
+          "Payment processing setup",
+          "Mobile app development",
+          "Deployment and training"
+        ],
+        "keyFeatures": [
+          { "title": "Instant Booking", "description": "24/7 online booking with immediate confirmation" },
+          { "title": "Worker Management", "description": "Complete staff profiles with skills, ratings and availability" },
+          { "title": "Live Tracking", "description": "Real-time GPS tracking of service providers" },
+          { "title": "Quality Control", "description": "Post-service checklists and client ratings" },
+          { "title": "Flexible Payments", "description": "Multiple payment options with automated invoicing" },
+          { "title": "Client Portal", "description": "Service history, receipts and rebooking" }
+        ],
+        "results": [
+          { "value": "3x", "label": "More bookings" },
+          { "value": "90%", "label": "On-time arrivals" },
+          { "value": "4.8/5", "label": "Average service rating" },
+          { "value": "50%", "label": "Reduced admin costs" }
+        ],
+        "testimonials": [
+          {
+            "quote": "CleanPro transformed our small cleaning business into a professional service with 3x more clients in just 6 months.",
+            "author": "Maria Gonzalez, Cleaning Business Owner"
+          },
+          {
+            "quote": "I love being able to see exactly when my cleaner will arrive and track their progress to my home.",
+            "author": "David Wilson, Regular Client"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Lagu Udhyog Papad Center Website",
+      "category": "Lagu Udhyog",
+      "description": "A complete online presence for a papad manufacturing business with product showcase, order management, and distributor network.",
+      "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Node.js", "MongoDB", "Payment Gateway"],
+      "duration": "2 months",
+      "team": "3 developers",
+      "features": ["Product Catalog", "Online Orders", "Distributor Portal", "Bulk Order System"],
+      "detailedInfo": {
+        "overview": "A specialized website for a papad manufacturing business that showcases their products, handles online orders, and manages distributor relationships.",
+        "challenge": "Traditional papad businesses lacked digital presence, making it difficult to reach new customers and manage bulk orders efficiently.",
+        "solution": "We created a comprehensive platform with product showcase, online ordering system, and a dedicated portal for distributors to place bulk orders.",
+        "workflow": [
+          "Business Requirements Analysis",
+          "Product Catalog Design",
+          "Order Management System",
+          "Distributor Portal Development",
+          "Payment Gateway Integration",
+          "Quality Testing",
+          "Launch & Training"
+        ],
+        "keyFeatures": [
+          { "title": "Product Showcase", "description": "Beautiful display of papad varieties with detailed descriptions and images" },
+          { "title": "Online Ordering", "description": "Easy ordering system for retail and bulk customers" },
+          { "title": "Distributor Portal", "description": "Dedicated area for distributors to place and track bulk orders" },
+          { "title": "Recipe Section", "description": "Creative recipes using their papad products to increase engagement" }
+        ],
+        "results": [
+          { "value": "200%", "label": "Increase in orders" },
+          { "value": "50+", "label": "New distributors onboarded" },
+          { "value": "4.7/5", "label": "Customer satisfaction" },
+          { "value": "30%", "label": "Reduction in order processing time" }
+        ],
+        "testimonials": [
+          {
+            "quote": "This website transformed our small papad business. We now receive orders from across the region and our distributor network has expanded significantly.",
+            "author": "Rajesh Patel, Papad Center Owner"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "BookEasy - Online Booking Platform",
+      "category": "Booking",
+      "description": "A seamless online booking platform for hotels, travel, and events with real-time availability, secure payments, and personalized recommendations.",
+      "image": "https://images.pexels.com/photos/4144225/pexels-photo-4144225.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Stripe", "Firebase"],
+      "duration": "5 months",
+      "team": "6 developers",
+      "features": ["Hotel & Travel Booking", "Event Reservations", "Payment Gateway", "User Reviews", "Smart Recommendations"],
+      "detailedInfo": {
+        "overview": "BookEasy is a one-stop booking solution designed to simplify reservations for hotels, travel packages, and events with real-time availability and secure payments.",
+        "challenge": "Users often faced issues with fragmented booking services, lack of real-time availability updates, and unreliable payment integrations.",
+        "solution": "We built a unified booking platform with multi-category reservations, real-time seat/room availability, smart recommendations, and secure payment integration.",
+        "workflow": [
+          "Market Research & Requirement Gathering",
+          "Booking Flow Design",
+          "Availability & Inventory Integration",
+          "Payment Gateway Setup",
+          "Event & Travel Modules",
+          "User Reviews & Ratings",
+          "Mobile App Development",
+          "Testing & Deployment"
+        ],
+        "keyFeatures": [
+          { "title": "Unified Booking System", "description": "Book hotels, events, and travel packages in one platform" },
+          { "title": "Real-Time Availability", "description": "Instant updates on room availability and event seats" },
+          { "title": "Smart Recommendations", "description": "AI-driven suggestions based on user preferences and past bookings" },
+          { "title": "Secure Payments", "description": "Integrated with Stripe & multiple wallets for safe checkout" },
+          { "title": "User Reviews", "description": "Ratings and feedback system for transparency and trust" }
+        ],
+        "results": [
+          { "value": "500K+", "label": "Bookings in first year" },
+          { "value": "70%", "label": "Returning users rate" },
+          { "value": "40%", "label": "Faster booking process" },
+          { "value": "4.9/5", "label": "Average user rating" }
+        ],
+        "testimonials": [
+          {
+            "quote": "BookEasy made my vacation planning so simple. I could book my hotel, event tickets, and travel in one place!",
+            "author": "Ananya Mehta, Frequent Traveler"
+          },
+          {
+            "quote": "As an event organizer, BookEasy helped me reach more customers and manage bookings effortlessly.",
+            "author": "Karan Singh, Event Organizer"
+          }
+        ]
+      }
+    }
+  ]
+    ,
+    "stats": [
+    { "value": "97%", "label": "Customer Satisfaction" },
+    { "value": "3.5x", "label": "Average ROI" },
+    { "value": "40%", "label": "Cost Reduction" },
+    { "value": "24/7", "label": "Support Availability" }
+  ]
+    ,
+ "features": [
+    {
+      "title": "Real-time Analytics",
+      "description": "Access live data and insights to make informed decisions instantly.",
+      "icon": "📊"
+    },
+    {
+      "title": "Seamless Integration",
+      "description": "Connect with your existing tools and workflows without disruption.",
+      "icon": "🔌"
+    },
+    {
+      "title": "Custom Workflows",
+      "description": "Tailor processes to match your unique business requirements.",
+      "icon": "🔄"
+    },
+    {
+      "title": "Advanced Security",
+      "description": "Enterprise-grade protection for your sensitive data and operations.",
+      "icon": "🔒"
+    }
+  ]
+    ,
+    "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "role": "CTO, TechCorp Inc.",
+      "content": "Novapex transformed our business operations. Their solutions helped us increase productivity by 40% in just three months.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "role": "Operations Director, Global Solutions",
+      "content": "The implementation was seamless and the support team was exceptional. We've seen a 25% reduction in operational costs.",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Elena Rodriguez",
+      "role": "CEO, Innovate Labs",
+      "content": "Novapex's mobile app has been a game-changer for our remote teams. The intuitive interface and reliability are unmatched.",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1361&q=80"
+    }
+  ]
+    ,
+ "heroSlides": [
+    {
+      "id": 1,
+      "title": "Web Development Excellence",
+      "subtitle": "Creating responsive, modern websites that drive results",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
+      "cta": "View Portfolio"
+    },
+    {
+      "id": 2,
+      "title": "Mobile App Innovation",
+      "subtitle": "Native and cross-platform applications for seamless user experiences",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "cta": "Explore Apps"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Design Mastery",
+      "subtitle": "Intuitive interfaces that engage and convert your audience",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
+      "cta": "See Designs"
+    }
+  ]
+    ,
+"contact_services" : [
+    "Custom Software Development",
+    "Mobile App Development",
+    "Web Development",
+    "Cloud Solutions",
+    "UI/UX Design",
+    "Data Analytics",
+    "AI & Machine Learning",
+    "DevOps & Automation",
+    "Cybersecurity",
+    "Consulting Services"
+  ]
+,
+   "blogPosts": [
+  {
+    "id": 1,
+    "title": "How AI is Transforming Businesses",
+    "description": "AI is helping companies automate tasks, improve customer experiences, and make data-driven decisions.",
+    "fullContent": "Artificial Intelligence is no longer a futuristic concept—it's here and transforming businesses across all industries. From automating routine tasks to providing deep insights through data analysis, AI is revolutionizing how companies operate.\n\nKey areas where AI is making an impact:\n- Customer service automation with chatbots\n- Predictive analytics for better decision-making\n- Process automation to increase efficiency\n- Personalized marketing campaigns\n- Enhanced cybersecurity measures\n\nCompanies that embrace AI technology are seeing significant improvements in productivity, cost reduction, and customer satisfaction. The future belongs to those who can effectively integrate AI into their business strategies.",
+    "date": "Sep 3, 2025",
+    "category": "Technology",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "readTime": "5 min read",
+    "author": "Sarah Johnson",
+    "authorRole": "AI Specialist"
+  },
+  {
+    "id": 2,
+    "title": "Top Services Every Tech Company Should Offer",
+    "description": "From cloud solutions to AI-driven analytics, discover the must-have services for modern businesses.",
+    "fullContent": "In today's competitive landscape, technology companies need to offer comprehensive services that address the evolving needs of modern businesses. The most successful tech firms provide end-to-end solutions that help clients navigate digital transformation.\n\nEssential services include:\n- Cloud migration and management\n- Custom software development\n- Data analytics and business intelligence\n- Cybersecurity solutions\n- IoT integration services\n- AI and machine learning implementation\n\nBy offering these services, tech companies position themselves as valuable partners rather than just vendors, creating long-term relationships with clients.",
+    "date": "Aug 20, 2025",
+    "category": "Services",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "readTime": "7 min read",
+    "author": "Michael Chen",
+    "authorRole": "Service Director"
+  },
+  {
+    "id": 3,
+    "title": "The Future of Work with AI",
+    "description": "Artificial Intelligence is reshaping industries. Learn how your company can stay ahead.",
+    "fullContent": "The workplace is undergoing a radical transformation thanks to artificial intelligence. Rather than replacing human workers, AI is augmenting human capabilities and creating new opportunities for innovation and growth.\n\nFuture work trends include:\n- Hybrid human-AI teams\n- Remote work enhanced by AI tools\n- Continuous learning and skill development\n- Focus on creative and strategic tasks\n- Automated routine operations\n\nCompanies that successfully adapt to these changes will thrive in the new era of work, while those that resist may struggle to compete.",
+    "date": "Aug 10, 2025",
+    "category": "Innovation",
+    "image": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "readTime": "6 min read",
+    "author": "Emma Rodriguez",
+    "authorRole": "Future Work Analyst"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Computing Trends for 2025",
+    "description": "Discover the latest developments in cloud technology and how they impact business operations.",
+    "fullContent": "Cloud computing continues to evolve at a rapid pace, with new trends emerging that are reshaping how businesses leverage cloud infrastructure. Staying current with these developments is crucial for maintaining competitive advantage.\n\nKey trends for 2025:\n- Multi-cloud and hybrid cloud strategies\n- Serverless computing adoption\n- Edge computing integration\n- AI-powered cloud management\n- Enhanced security and compliance features\n- Sustainable cloud solutions\n\nThese trends are making cloud computing more accessible, secure, and efficient for businesses of all sizes.",
+    "date": "Jul 28, 2025",
+    "category": "Technology",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
+    "readTime": "8 min read",
+    "author": "David Kim",
+    "authorRole": "Cloud Architect"
+  },
+  {
+    "id": 5,
+    "title": "Cybersecurity Best Practices",
+    "description": "Essential strategies to protect your business from evolving cyber threats in the digital age.",
+    "fullContent": "As cyber threats become more sophisticated, businesses must adopt comprehensive security practices to protect their data, systems, and reputation. A proactive approach to cybersecurity is no longer optional—it's essential for survival.\n\nCritical best practices include:\n- Regular security assessments and audits\n- Employee training and awareness programs\n- Multi-factor authentication implementation\n- Data encryption both at rest and in transit\n- Incident response planning\n- Regular software updates and patch management\n\nImplementing these practices can significantly reduce your organization's vulnerability to cyber attacks.",
+    "date": "Jul 15, 2025",
+    "category": "Security",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "readTime": "9 min read",
+    "author": "Lisa Thompson",
+    "authorRole": "Security Expert"
+  },
+  {
+    "id": 6,
+    "title": "Digital Transformation Strategies",
+    "description": "How to successfully navigate the process of digital transformation in your organization.",
+    "fullContent": "Digital transformation is more than just adopting new technologies—it's about fundamentally changing how your organization operates and delivers value to customers. A successful transformation requires careful planning and execution.\n\nEffective strategies include:\n- Developing a clear digital vision and roadmap\n- Fostering a culture of innovation and adaptability\n- Investing in the right technology stack\n- Prioritizing customer experience\n- Building cross-functional teams\n- Measuring progress with relevant KPIs\n\nOrganizations that approach digital transformation holistically are more likely to achieve sustainable success.",
+    "date": "Jun 30, 2025",
+    "category": "Business",
+    "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "readTime": "10 min read",
+    "author": "James Wilson",
+    "authorRole": "Transformation Consultant"
+  }
+]
+,
+
+  "about": {
+    "title": "About Novapex Infohub",
+    "description": "We are a forward-thinking software development company dedicated to creating innovative solutions that empower businesses to thrive in the digital landscape.",
+    "ourStory": {
+      "heading": "Our Story",
+      "paragraphs": [
+        "Novapex Infohub emerged from a passion for technology and a vision to bridge the gap between complex business challenges and elegant software solutions. Our team of expert developers, designers, and strategists work collaboratively to deliver exceptional results.",
+        "We believe in the power of innovation, quality craftsmanship, and building long-lasting partnerships with our clients. Every project we undertake is an opportunity to push boundaries and set new standards in software excellence."
+      ],
+      "image": "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    "whyChooseUs": {
+      "heading": "Why Choose Novapex Infohub?",
+      "points": [
+        "Expert team with proven track record",
+        "Cutting-edge technologies and methodologies",
+        "Agile development process",
+        "24/7 support and maintenance",
+        "Transparent communication"
+      ]
+    },
+    "office": {
+      "heading": "Innovation-Driven Environment",
+      "description": "Our state-of-the-art facilities are designed to foster creativity and collaboration. From open-concept workspaces to dedicated innovation labs, every corner of our office is optimized for productivity and breakthrough thinking.",
+      "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "features": [
+        { "title": "Open Collaboration", "text": "Flexible spaces that encourage teamwork" },
+        { "title": "Innovation Labs", "text": "Dedicated areas for experimentation" },
+        { "title": "Focus Zones", "text": "Quiet spaces for deep work" },
+        { "title": "Tech Hub", "text": "Latest tools and technologies" }
+      ]
+    },
+    "architecture": {
+      "heading": "Architectural Excellence",
+      "description": "Just as we believe in clean, efficient code, our workspace reflects our commitment to clarity, functionality, and aesthetic excellence. Every detail is thoughtfully designed to inspire our team and impress our clients.",
+      "image": "https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "highlights": [
+        "Sustainable design principles",
+        "Energy-efficient systems",
+        "Smart building technology",
+        "Wellness-focused amenities"
+      ]
+    },
+    "teamMembers": [
+      {
+        "name": "Mr. Amol Harne",
+        "initials": "AH",
+        "role": "Chief Executive Officer & Founder",
+        "shortRole": "HR Professional & Entrepreneur",
+        "description": "As an experienced HR professional and visionary entrepreneur, Amol brings a unique perspective to Novapex Infohub. His strategic thinking and people-first approach lay the foundation for a strong, client-centric organization. Amol oversees operations and ensures the delivery of exceptional services tailored to client needs."
+      },
+      {
+        "name": "Mrs. Mrunal Ghenge",
+        "initials": "MG",
+        "role": "Creative Director & Co-Founder",
+        "shortRole": "Creative Director & UX Specialist",
+        "description": "Mrunal is a creative thinker and problem solver. Her focus on design, quality, and user experience brings life to Novapex Infohub's projects. She specializes in translating client visions into visually appealing, functional web applications that exceed expectations."
+      },
+      {
+        "name": "Mrs. Daila Aswar",
+        "initials": "DA",
+        "role": "Technical Lead & Co-Founder",
+        "shortRole": "Technical Lead & Developer",
+        "description": "Daila brings technical expertise and innovation to Novapex Infohub. With a strong background in development and technology solutions, she ensures that projects are built with cutting-edge technologies and robust architecture. Her attention to detail and problem-solving skills make her an invaluable part of our team."
+      }
+    ],
+    "values": [
+      {
+        "icon": "Target",
+        "title": "Mission",
+        "text": "To deliver innovative software solutions that drive business success and create lasting value."
+      },
+      {
+        "icon": "Eye",
+        "title": "Vision",
+        "text": "To be the leading software development partner, known for excellence and innovation."
+      },
+      {
+        "icon": "Award",
+        "title": "Excellence",
+        "text": "We maintain the highest standards in every aspect of our work and client relationships."
+      },
+      {
+        "icon": "Globe",
+        "title": "Global Reach",
+        "text": "Serving clients worldwide with local expertise and global best practices."
+      }
+    ]
+  }
+}
