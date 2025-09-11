@@ -20,7 +20,7 @@ const RouteChangeHandler = ({ children }) => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 500); // adjust duration
+    const timer = setTimeout(() => setLoading(false), 800); // adjust duration
     return () => clearTimeout(timer);
   }, [location]);
 

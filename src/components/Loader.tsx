@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Loader = () => {
   return (
@@ -7,7 +7,7 @@ const Loader = () => {
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#00C08B]/10 rounded-full animate-pulse-very-slow"></div>
       <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-[#1A2368]/20 rounded-full animate-pulse-very-slow animation-delay-6000"></div>
       <div className="absolute top-1/4 right-1/4 w-40 h-40 bg-[#00C08B]/15 rounded-full animate-ping-very-slow"></div>
-      
+
       {/* Floating cartoon clouds */}
       <div className="absolute top-10 left-1/4 animate-float-very-slow">
         <div className="w-24 h-12 bg-white/30 rounded-full relative">
@@ -16,7 +16,7 @@ const Loader = () => {
           <div className="absolute -top-2 left-16 w-8 h-8 bg-white/30 rounded-full"></div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-20 right-1/4 animate-float-very-slow animation-delay-3000">
         <div className="w-20 h-10 bg-white/30 rounded-full relative">
           <div className="absolute -top-2 left-3 w-8 h-8 bg-white/30 rounded-full"></div>
@@ -24,7 +24,7 @@ const Loader = () => {
           <div className="absolute -top-1 left-14 w-6 h-6 bg-white/30 rounded-full"></div>
         </div>
       </div>
-      
+
       {/* Cartoon character */}
       <div className="absolute bottom-10 left-10 animate-bounce-very-slow">
         <div className="relative">
@@ -40,53 +40,27 @@ const Loader = () => {
           <div className="absolute -top-3 right-5 w-2 h-2 bg-black rounded-full animate-ping-very-slow animation-delay-1000"></div>
         </div>
       </div>
-      
-      {/* Central logo container */}
+
+      {/* Central logo container (GIF instead of SVG) */}
       <div className="relative mb-8">
         {/* Outer glow effect */}
         <div className="absolute inset-0 bg-[#00C08B]/30 rounded-3xl blur-xl animate-pulse-very-slow"></div>
-        
-        {/* Main logo */}
-        <div className="relative w-28 h-28 bg-gradient-to-br from-[#0A0F2D] to-[#1A2368] rounded-3xl flex items-center justify-center shadow-2xl shadow-[#00C08B]/20 border border-[#00C08B]/30">
-          {/* Hexagon icon */}
-          <div className="relative">
-            <svg 
-              className="w-14 h-14 text-[#00C08B]" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path 
-                d="M12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5L12 1Z" 
-                stroke="currentColor" 
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-              <path 
-                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" 
-                stroke="currentColor" 
-                strokeWidth="2"
-              />
-              <path 
-                d="M17 15C17 16.6569 15.6569 18 14 18H10C8.34315 18 7 16.6569 7 15" 
-                stroke="currentColor" 
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-            
-            {/* Animated elements inside logo */}
-            <div className="absolute top-3 left-3 w-2 h-2 bg-[#00C08B] rounded-full animate-ping-very-slow"></div>
-            <div className="absolute bottom-2 right-2 w-1.5 h-1.5 bg-[#00C08B] rounded-full animate-pulse-very-slow"></div>
-          </div>
+
+        {/* GIF Logo */}
+        <div className="relative w-40 h-40 bg-gradient-to-br from-[#0A0F2D] to-[#1A2368] rounded-3xl flex items-center justify-center shadow-2xl shadow-[#00C08B]/20 border border-[#00C08B]/30 overflow-hidden">
+          <img
+            src="src/Assets/Pranav1_animation.gif"
+            alt="Loading animation"
+            className="w-full h-full object-contain"
+          />
         </div>
-        
-        {/* Orbiting dots - Slower */}
+
+        {/* Orbiting dots */}
         <div className="absolute -top-2 -left-2 w-4 h-4 bg-[#00C08B] rounded-full animate-orbit-very-slow shadow-lg shadow-[#00C08B]/50"></div>
         <div className="absolute -bottom-2 -right-2 w-3 h-3 bg-[#00C08B] rounded-full animate-orbit-reverse-very-slow animation-delay-3000 shadow-lg shadow-[#00C08B]/50"></div>
       </div>
-      
-      {/* Company name with animation - Slower */}
+
+      {/* Company name with animation */}
       <div className="text-center mb-2">
         <h1 className="text-4xl font-bold text-white mb-2 tracking-tight">
           <span className="inline-block animate-fade-in-very-slow animation-delay-1200 opacity-0">N</span>
@@ -109,18 +83,18 @@ const Loader = () => {
           Intelligent Digital Solutions
         </p>
       </div>
-      
-      {/* Tech-inspired loading bar - Slower */}
+
+      {/* Tech-inspired loading bar */}
       <div className="w-80 h-1.5 bg-[#0A0F2D] rounded-full mt-8 overflow-hidden border border-[#00C08B]/20">
         <div className="h-full bg-gradient-to-r from-[#00C08B] to-[#1A2368] rounded-full w-0 animate-progress-glow-very-slow shadow-lg shadow-[#00C08B]/40"></div>
       </div>
-      
-      {/* Binary code animation - Slower */}
+
+      {/* Binary code animation */}
       <div className="mt-6 text-xs text-[#00C08B]/40 font-mono flex space-x-4">
         <div className="animate-binary-flow-very-slow">10101010 00110100 11110000</div>
         <div className="animate-binary-flow-very-slow animation-delay-6000">01010101 11001100 00001111</div>
       </div>
-      
+
       {/* Loading status */}
       <div className="mt-6 text-[#00C08B] text-sm font-light flex items-center">
         <svg className="w-4 h-4 mr-2 animate-spin-very-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -128,9 +102,9 @@ const Loader = () => {
         </svg>
         Initializing systems...
       </div>
-      
-      {/* Custom animations - Very slow versions */}
-      <style jsx>{`
+
+      {/* Custom animations */}
+      <style >{`
         @keyframes progress-glow-very-slow {
           0% { width: 0%; opacity: 0.7; }
           50% { opacity: 1; }
