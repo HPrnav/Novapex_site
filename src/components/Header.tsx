@@ -1,6 +1,7 @@
 import  { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../Assets/LogoBT.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +49,7 @@ const Header = () => {
               onClick={closeMenu}
             >
               <img 
-                src="/src/Assets/LogoBT.png" 
+                src={logo} 
                 alt="Logo" 
                 className="h-20 w-auto object-cover"
               />
