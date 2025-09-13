@@ -1,8 +1,7 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate ,Link } from "react-router-dom";
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
 import data from "../data/data.json";
-
 
 const blogs = data.blogPosts;
 
@@ -14,10 +13,10 @@ const BlogDetail: React.FC = () => {
 
   if (!blog) {
     return (
-      <div className="max-w-4xl mx-auto py-20 px-4 text-center text-gray-700 ">
+      <div className="max-w-4xl mx-auto py-20 px-4 text-center text-gray-700">
         <p>Blog not found.</p>
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/blog")}
           className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
           Go Back
@@ -27,24 +26,25 @@ const BlogDetail: React.FC = () => {
   }
 
   return (
-    <div className="py-20 bg-gray-50  min-h-screen">
+    <div className="py-40 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4">
         {/* Back Button */}
-        <button
-          onClick={() => navigate(-1)}
-          className="mb-6 flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+        <Link
+          to="/blog"          
+          onClick={() => {navigate(-1); console.log("inside on click in blogdetail")}}
+          className="mb-6 flex items-center text-blue-600 hover:underline"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
           Back to Blogs
-        </button>
+        </Link>
 
         {/* Blog Title */}
-        <h1 className="text-4xl font-bold text-gray-900 ">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
           {blog.title}
         </h1>
 
         {/* Blog Meta Info */}
-        <div className="flex items-center space-x-6 text-sm text-gray-500 ">
+        <div className="flex items-center space-x-6 text-sm text-gray-500 mb-8">
           <div className="flex items-center space-x-1">
             <User className="h-4 w-4" />
             <span>{blog.author}</span>
@@ -59,26 +59,17 @@ const BlogDetail: React.FC = () => {
           </div>
         </div>
 
-        {/* Blog Image */}
-        {/* Blog Image + Content together */}
-<div className="flex flex-col md:flex-row md:items-start gap-6">
+        {/* Blog Content with floating image */}
+        <div className="prose dark:prose-invert leading-relaxed">
+          <img
+            src={blog.image}
+            alt={blog.title}
+            className="w-64 h-auto rounded-xl shadow float-left mr-6 mb-4 object-cover"
+          />
 
-  {/* Blog Content */}
-<div className="prose dark:prose-invert  leading-relaxed">
-
-    <img
-      src={blog.image}
-      alt={blog.title}
-      className="w-64 h-auto rounded-xl shadow float-left mr-6 mb-4 object-cover"
-    />
-
-    {blog.fullContent?.split("\n").map((para, idx) => (
-      <p key={idx}>{para}</p>
-    ))}
-
-</div>
-
-
+          {blog.fullContent?.split("\n").map((para, idx) => (
+            <p key={idx}>{para}</p>
+          ))}
         </div>
       </div>
     </div>
