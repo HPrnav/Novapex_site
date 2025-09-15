@@ -293,7 +293,7 @@ const {stats}=data
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Novapex</h2>
       <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-        Pioneering innovation and excellence in digital solutions since 2010
+        Pioneering innovation and excellence in digital solutions
       </p>
     </div>
 
@@ -590,12 +590,7 @@ const {stats}=data
                 </div>
 
                 {/* Slider Controls */}
-                <div className="flex justify-center mt-4 space-x-2">
-                  <button className="w-3 h-3 rounded-full bg-blue-600"></button>
-                  <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-                  <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-                  <button className="w-3 h-3 rounded-full bg-gray-300"></button>
-                </div>
+               
 
                 {/* Floating Stats */}
                 <div className="absolute -bottom-4 -right-4 bg-white rounded-xl p-4 shadow-lg">

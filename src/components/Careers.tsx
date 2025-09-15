@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react';
- 
+ import { Link } from "react-router-dom";
+
  const Careers = () => {
   const [isResumeDialogOpen, setIsResumeDialogOpen] = useState(false);
   const [isHRContactOpen, setIsHRContactOpen] = useState(false);
@@ -92,19 +93,13 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
-                onClick={() => setIsResumeDialogOpen(true)}
-                className="group bg-white text-[#00C08B] px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <Upload className="h-5 w-5 group-hover:animate-bounce" />
-                <span>Upload Resume</span>
-              </button>
+            
               <button 
                 onClick={() => setIsHRContactOpen(true)}
                 className="group border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#00C08B] transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Phone className="h-5 w-5" />
-                <span>Contact HR</span>
+                <span>Contact</span>
               </button>
             </div>
           </div>
@@ -128,7 +123,7 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
               </button>
             </div>
             
-            <form onSubmit={handleSubmitResume}>
+            {/* <form onSubmit={handleSubmitResume}>
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -178,7 +173,7 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
                   </button>
                 </div>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
       )}
@@ -188,7 +183,7 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-xl p-6 w-full max-w-md">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-bold">Contact HR Team</h3>
+              <h3 className="text-xl font-bold">Contact</h3>
               <button 
                 onClick={() => setIsHRContactOpen(false)} 
                 className="text-gray-500 hover:text-gray-700"
@@ -201,16 +196,17 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
               <div className="flex items-center gap-3 p-3 bg-gray-100 rounded-md">
                 <Phone className="h-5 w-5 text-[#00C08B]" />
                 <div>
-                  <p className="font-medium">HR Team</p>
-                  <p className="text-sm text-gray-600">+912269718996</p>
+                  <p className="font-medium">Contact Number</p>
+                  <p className="text-sm text-gray-600">+91-2269718996</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 bg-gray-100 rounded-md">
                 <Mail className="h-5 w-5 text-[#00C08B]" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-sm text-gray-600">Contact@novapexhub.com</p>
-                </div>
+<Link to="/contact" className="text-sm text-gray-600 hover:underline">
+  contact@novapexhub.com
+</Link>                </div>
               </div>
               
               <button

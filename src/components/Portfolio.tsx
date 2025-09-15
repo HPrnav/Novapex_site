@@ -346,7 +346,7 @@ const Portfolio = () => {
               </div>
 
               {/* Results */}
-              <div className="bg-gradient-to-r from-[#00C08B] to-[#00a87a] p-8 rounded-xl text-white mb-8">
+              {/* <div className="bg-gradient-to-r from-[#00C08B] to-[#00a87a] p-8 rounded-xl text-white mb-8">
                 <h3 className="text-xl font-bold mb-6 flex items-center">
                   <BarChart2 className="h-6 w-6 mr-2" />
                   Measurable Results
@@ -361,7 +361,7 @@ const Portfolio = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Testimonials */}
               {selectedProject.detailedInfo.testimonials && (

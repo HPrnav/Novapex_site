@@ -1,17 +1,14 @@
 import { useState, useCallback } from 'react';
 import { 
   Settings,
-  BarChart3, // 👈 no longer needed, but safe to keep if used elsewhere
-  ChevronLeft,
-  ChevronRight,
-  Quote,
-  Star,
+
   X,
   CheckCircle,
   Clock,
 } from 'lucide-react';
 
 import data from '../data/data.json';
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -172,9 +169,11 @@ const Services = () => {
               <div className="bg-gradient-to-r from-[#00C08B] to-[#008C65] p-6 rounded-xl text-center">
                 <h3 className="text-xl font-bold text-white mb-4">Ready to get started?</h3>
                 <p className="text-white/90 mb-6">Contact us today to discuss your project requirements</p>
-                <button className="bg-white text-[#00C08B] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
-                  Request a Quote
-                </button>
+               <Link to="/contact">
+  <button className="bg-white text-[#00C08B] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
+    Request a Quote
+  </button>
+</Link>
               </div>
             </div>
           </div>

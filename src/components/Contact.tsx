@@ -38,7 +38,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Us',
-    details: ['Contact@novapexinfohub.com', 'support@novapexinfohub.com']
+    details: ['contact@novapexhub.com', 'support@novapexhub.com']
   },
   {
     icon: Phone,

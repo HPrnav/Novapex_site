@@ -54,30 +54,30 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="bg-[#00C08B] p-2 rounded-lg">
+              {/* <div className="bg-[#00C08B] p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
-              </div>
+              </div> */}
               <span className="text-2xl font-bold">Novapex Infohub</span>
             </div>
 
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <a
-                  href="mailto:support@novapexhub.com"
-                  className="hover:text-[#00C08B] transition-colors duration-200"
-                >
-                  support@novapexhub.com
-                </a>
+                <Link
+    to="/contact"
+    className="hover:text-[#00C08B] transition-colors duration-200"
+  >
+    support@novapexhub.com
+  </Link>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <a
-                  href="mailto:contact@novapexhub.com"
-                  className="hover:text-[#00C08B] transition-colors duration-200"
-                >
-                  contact@novapexhub.com
-                </a>
+               <Link
+    to="/contact"
+    className="hover:text-[#00C08B] transition-colors duration-200"
+  >
+    contact@novapexhub.com
+  </Link>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone className="h-4 w-4" />
