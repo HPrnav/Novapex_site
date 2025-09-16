@@ -1,4 +1,5 @@
- import data from '../data/data.json'
+ import { useEffect } from 'react';
+import data from '../data/data.json'
 import { useNavigate } from "react-router-dom";
 
 const {blogPosts} = data ;
@@ -6,6 +7,9 @@ const {blogPosts} = data ;
 const Blog = () => {
     const navigate = useNavigate();
 
+    useEffect(()=>{
+      window.scrollTo(0,0);
+    },[])
 
   return (
     <section className="py-20 bg-gray-50 min-h-screen">

@@ -8,7 +8,8 @@ import {
   FaCss3Alt,
   FaAndroid,
   FaGithub,
-  FaDocker
+  FaDocker,
+  FaInfinity
 } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiMysql, SiTypescript,SiSpringboot, SiSupabase } from "react-icons/si";
 
@@ -34,7 +35,7 @@ const techRows = [
     { icon: <SiMysql className="text- blue-500" />, name: "MySql" },
     { icon: <FaDocker className="text-blue-400" />, name: "Docker" },
     { icon: <FaReact className="text-cyan-400" />, name: "React Native" },
-    { icon: <FaGithub className="text-gray-800 dark:text-white" />, name: "CI/CD" },
+    { icon: <FaInfinity className="text-gray-800" />, name: "CI/CD" },
   ],
 ];
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Technologies from './Technologies';
 import data from '../data/data.json'
 
@@ -21,7 +21,7 @@ const NovapexPage = () => {
 const {heroSlides }= data 
 const {testimonials} = data
 const {features}= data
-const {stats}=data
+
   
 
   useEffect(() => {
@@ -190,33 +190,6 @@ const {stats}=data
     </button>
   </div>
 </section>
-
-
-
-
-
-      {/* Conference Hero Section */}
-      {/* <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${conferenceImage})` }}
-        >
-          <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-sm"></div>
-        </div>
-        
-        <div className="relative z-10 text-center space-y-8 px-4 max-w-4xl mx-auto">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold leading-tight text-white">
-              <span className="block">Novapex Infohub</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto">
-              Join the world's leading developers, designers, and innovators for three days of 
-              cutting-edge insights and networking opportunities.
-            </p>
-          </div>
-        </div>
-      </section> */}
-
       {/* Novapex Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -314,13 +287,6 @@ const {stats}=data
         </div>
 
 
-{/* 
-        <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300">
-          Read Our Full Story
-          <svg className="inline ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button> */}
       </div>
 
       {/* Team Image & Values */}
@@ -409,13 +375,16 @@ const {stats}=data
                 {testimonials.map((testimonial) => (
                   <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
                     <div className="text-center">
-                      <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                        <img 
-                          src={testimonial.avatar} 
-                          alt={testimonial.name}
-                          className="w-full h-full object-cover"
-                        />
+                      <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-500">
+                        <span className="text-white font-bold text-3xl">
+                          {testimonial.name
+                            .split(" ")
+                            .map(word => word[0])
+                            .join("")
+                            .toUpperCase()}
+                        </span>
                       </div>
+                      
                       <p className="text-xl text-gray-800 italic mb-6 max-w-2xl mx-auto">
                         "{testimonial.content}"
                       </p>
@@ -562,13 +531,6 @@ const {stats}=data
                     </div>
                   </div>
                 </div>
-
-                {/* <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300">
-                  View Our Portfolio
-                  <svg className="inline ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </button> */}
               </div>
 
               {/* Image Slider */}
@@ -602,17 +564,7 @@ const {stats}=data
               </div>
             </div>
 
-            {/* Client Logos */}
-            {/* <div className="mt-12 pt-8 border-t border-gray-200">
-              <h4 className="text-center text-gray-600 mb-6">Trusted by leading event organizers worldwide</h4>
-              <div className="flex flex-wrap justify-center gap-8 opacity-60">
-                <div className="w-24 h-12 bg-gray-200 rounded-lg"></div>
-                <div className="w-24 h-12 bg-gray-200 rounded-lg"></div>
-                <div className="w-24 h-12 bg-gray-200 rounded-lg"></div>
-                <div className="w-24 h-12 bg-gray-200 rounded-lg"></div>
-                <div className="w-24 h-12 bg-gray-200 rounded-lg"></div>
-              </div>
-            </div> */}
+
           </div>
         </div>
       </section>

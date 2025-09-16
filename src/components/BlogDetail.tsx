@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate ,Link } from "react-router-dom";
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react";
 import data from "../data/data.json";
 
 const blogs = data.blogPosts;
 
+
+
 const BlogDetail: React.FC = () => {
+
+  useEffect(()=>{
+  window.scrollTo(0,0);
+},[])
+
+
   const { id } = useParams();
   const navigate = useNavigate();
 
