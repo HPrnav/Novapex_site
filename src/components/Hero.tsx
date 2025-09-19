@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import Technologies from './Technologies';
 import data from '../data/data.json'
+import { motion } from "framer-motion";
+
+
 
 const NovapexPage = () => {
   const conferenceImage = "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80";
@@ -75,14 +78,6 @@ const {features}= data
     setTestimonialIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
-  const nextFeature = () => {
-    setFeatureIndex((prev) => (prev + 1) % features.length);
-  };
-
-  const prevFeature = () => {
-    setFeatureIndex((prev) => (prev - 1 + features.length) % features.length);
-  };
-
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
@@ -107,89 +102,108 @@ const {features}= data
       </div>
 
       {/* Slider Hero Section */}
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
   {/* Background Slides */}
   <div className="absolute inset-0">
     {heroSlides.map((slide, index) => (
       <div
         key={slide.id}
-        className={`absolute inset-0 transition-opacity duration-1000 ${
+        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
           index === currentSlide ? "opacity-100" : "opacity-0"
         }`}
       >
-        <img
-          src={slide.image}
-          alt={slide.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50"></div>
+        {heroSlides.map((slide, index) => (
+  index === currentSlide && (
+    <img
+      key={slide.id}
+      src={`${slide.image}&w=1200&q=70`}  // smaller resolution
+      alt={slide.title}
+      loading="lazy"
+      className="w-full h-full object-cover"
+    />
+  )
+))}
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>
     ))}
   </div>
 
   {/* Slide Content */}
-  <div className="relative z-10 text-center space-y-8 px-4 max-w-4xl mx-auto">
-    <div className="space-y-6">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-        <span className="block">{heroSlides[currentSlide].title}</span>
+  <div className="relative z-10 text-center space-y-10 px-6 max-w-5xl mx-auto">
+    <motion.div
+      key={currentSlide}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="space-y-6"
+    >
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white drop-shadow-lg">
+        {heroSlides[currentSlide].title}
       </h1>
-      <p className="text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto">
+      <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
         {heroSlides[currentSlide].subtitle}
       </p>
-    </div>
+      <div className="flex justify-center space-x-4 mt-8">
+        
+      </div>
+    </motion.div>
 
     {/* Slider Indicators */}
-    <div className="flex justify-center space-x-3">
+    <div className="flex justify-center space-x-3 mt-10">
       {heroSlides.map((_, index) => (
         <button
           key={index}
           onClick={() => setCurrentSlide(index)}
           className={`w-3 h-3 rounded-full transition-all duration-300 ${
-            index === currentSlide ? "bg-white scale-125" : "bg-white/50"
+            index === currentSlide
+              ? "bg-white scale-125 shadow-md"
+              : "bg-white/40 hover:bg-white/60"
           }`}
         />
       ))}
     </div>
-
-    {/* Navigation Arrows */}
-    <button
-      onClick={prevSlide}
-      className="absolute left-8 md:left-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
-    >
-      <svg
-        className="w-6 h-6 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-    </button>
-    <button
-      onClick={nextSlide}
-      className="absolute right-8 md:right-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
-    >
-      <svg
-        className="w-6 h-6 text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </button>
   </div>
+
+  {/* Navigation Arrows */}
+  <button
+    onClick={prevSlide}
+    className="absolute left-6 md:left-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm shadow-lg"
+  >
+    <svg
+      className="w-6 h-6 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M15 19l-7-7 7-7"
+      />
+    </svg>
+  </button>
+  <button
+    onClick={nextSlide}
+    className="absolute right-6 md:right-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm shadow-lg"
+  >
+    <svg
+      className="w-6 h-6 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M9 5l7 7-7 7"
+      />
+    </svg>
+  </button>
 </section>
+
       {/* Novapex Hero Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
