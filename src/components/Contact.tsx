@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Clock, Send, MessageSquare, User, Building } from 'lucide-react';
+import { Mail, Phone, Clock, Send, MessageSquare, User, Building, CheckCircle, XCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import data from '../data/data.json';
 
@@ -14,6 +14,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [popup, setPopup] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+  const [errors, setErrors] = useState<{ phone?: string; message?: string }>({});
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -24,22 +26,44 @@ const Contact = () => {
     });
   };
 
+  const validateForm = () => {
+    let newErrors: { phone?: string; message?: string } = {};
+
+    // Phone number: required, digits, +, -, spaces; length between 7–15
+    const phoneRegex = /^[0-9+\-\s()]{7,15}$/;
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required.";
+    } else if (!phoneRegex.test(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number.";
+    }
+
+    // Message: must be at least 10 characters
+    if (!formData.message || formData.message.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters long.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
     setLoading(true);
 
-    // Replace with your EmailJS IDs
     emailjs
       .send(
-        'service_xrq8qci',   // e.g. service_xxxxxx
-        'template_6ji6paa',  // e.g. template_xxxxxx
+        'service_xrq8qci',
+        'template_6ji6paa',
         formData,
-        'UwJgCwJ6LDrxv-dJW'    // e.g. AbCdEfGh123456
+        'UwJgCwJ6LDrxv-dJW'
       )
-
       .then(
         () => {
-          alert("✅ Thank you! Your message has been sent successfully.");
+          setPopup({
+            type: 'success',
+            message: "✅ Your message has been sent successfully! Our team will contact you soon."
+          });
           setFormData({
             name: '',
             email: '',
@@ -51,7 +75,10 @@ const Contact = () => {
         },
         (error) => {
           console.error("EmailJS Error:", error.text);
-          alert("❌ Oops! Something went wrong. Please try again later.");
+          setPopup({
+            type: 'error',
+            message: "❌ Oops! Something went wrong. Please try again later."
+          });
         }
       )
       .finally(() => setLoading(false));
@@ -78,7 +105,7 @@ const Contact = () => {
   const services = data.contact_services;
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -189,7 +216,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number
+                      Phone Number *
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
@@ -199,10 +226,13 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00C08B] focus:border-transparent transition-all duration-200"
+                        className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#00C08B] focus:border-transparent transition-all duration-200 ${
+                          errors.phone ? "border-red-500" : "border-gray-300"
+                        }`}
                         placeholder="Enter your phone number"
                       />
                     </div>
+                    {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                   </div>
                 </div>
 
@@ -239,10 +269,13 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00C08B] focus:border-transparent transition-all duration-200 resize-none"
+                      className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#00C08B] focus:border-transparent transition-all duration-200 resize-none ${
+                        errors.message ? "border-red-500" : "border-gray-300"
+                      }`}
                       placeholder="Tell us about your project and requirements..."
                     ></textarea>
                   </div>
+                  {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
                 </div>
 
                 <button
@@ -258,6 +291,26 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      {popup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-xl shadow-lg max-w-md text-center">
+            {popup.type === 'success' ? (
+              <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+            ) : (
+              <XCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
+            )}
+            <p className="text-lg font-medium text-gray-800">{popup.message}</p>
+            <button
+              onClick={() => setPopup(null)}
+              className="mt-4 px-6 py-2 bg-[#00C08B] text-white rounded-lg hover:bg-[#008C6B] transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

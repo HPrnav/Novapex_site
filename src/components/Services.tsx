@@ -1,7 +1,6 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback , useEffect } from 'react';
 import { 
   Settings,
-
   X,
   CheckCircle,
   Clock,
@@ -10,9 +9,16 @@ import {
 import data from '../data/data.json';
 import { Link } from "react-router-dom";
 
+
+
+
 const Services = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const [selectedService, setSelectedService] = useState(null);
+
+  useEffect(()=>{
+  window.scrollTo({top:0,behavior:'smooth'})
+})
+
+   const [selectedService, setSelectedService] = useState(null);
   const { services } = data;
 
   const testimonials = [
@@ -32,17 +38,6 @@ const Services = () => {
     }
   ];
 
-  const nextTestimonial = useCallback(() => {
-    setCurrentTestimonial((prev) => 
-      prev === testimonials.length - 1 ? 0 : prev + 1
-    );
-  }, [testimonials.length]);
-
-  const prevTestimonial = useCallback(() => {
-    setCurrentTestimonial((prev) => 
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
-  }, [testimonials.length]);
 
   const openServiceModal = (service) => {
     setSelectedService(service);
@@ -203,13 +198,8 @@ const Services = () => {
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                    />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                  
-                  {/* Icon overlay */}
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-[#00C08B] transition-all duration-300">
-                    <IconComponent className="h-6 w-6 text-[#00C08B] group-hover:text-white transition-colors duration-300" />
-                  </div>
                 </div>
 
                 {/* Content */}
