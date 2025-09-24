@@ -21,12 +21,15 @@ const Footer = () => {
   };
 
   const services = [
-    "Custom Software Development",
-    "Mobile App Development",
-    "Web Development",
-    "Cloud Solutions",
-    "UI/UX Design",
-    "Data Analytics",
+    "Website Development",
+    "Customized Development",
+   "Mobile Application",
+   "Graphic Designing",
+   "Animation",
+   "Content Writing",
+   "Digital Marketing",
+   "SMS Marketing",
+   "Email Marketing",
   ];
 
   const company = [
@@ -39,7 +42,7 @@ const Footer = () => {
 
   const resources = [
     { name: "Blog", path: "/blog" },
-    { name: "Support Center", path: "/support" },
+  
   ];
 
   const scrollToTop = () => {

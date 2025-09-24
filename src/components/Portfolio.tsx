@@ -171,7 +171,7 @@ const Portfolio = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[#00C08B] mb-2">20+</div>
-              <div className="text-gray-600">Websites Created</div>
+              <div className="text-gray-600">Web-Apps Created</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-[#00C08B] mb-2">10+</div>
