@@ -11,6 +11,7 @@ import {
   ArrowUp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../Assets/LogoBT.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -56,12 +57,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              {/* <div className="bg-[#00C08B] p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div> */}
-              <span className="text-2xl font-bold">Novapex Infohub</span>
-            </div>
+<div className="flex items-center space-x-3 mb-6">
+  {/* Logo */}
+  <img
+    src={logo}
+    alt="Novapex Infohub Logo"
+    className="h-20 w-35 object-cover" // bigger logo
+  />
+
+  {/* Text */}
+</div>
+
+
 
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-400">
@@ -181,8 +188,8 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center space-x-6">
-              <div className="text-gray-400 text-sm">
-                © 2024 Novapex Infohub. All rights reserved.
+              <div className="text-gray-400 text-sm text-center">
+                © 2024 Novapex Infohub.
               </div>
               <button
                 onClick={scrollToTop}
