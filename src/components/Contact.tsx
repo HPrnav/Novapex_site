@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { Mail, Phone, Clock, Send, MessageSquare, User, Building, CheckCircle, XCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import data from '../data/data.json';
@@ -53,10 +53,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_xrq8qci',
-        'template_6ji6paa',
+        'service_6sjp4tq',  //service id
+        'template_ouy3g1o', // templete id 
         formData,
-        'UwJgCwJ6LDrxv-dJW'
+        'T7LoUmb4Fulks3Pva' // you rpublic key
       )
       .then(
         () => {
@@ -103,6 +103,10 @@ const Contact = () => {
   ];
 
   const services = data.contact_services;
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
 
   return (
     <section id="contact" className="py-20 bg-gray-50 relative">

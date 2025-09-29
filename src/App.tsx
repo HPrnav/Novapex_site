@@ -14,7 +14,7 @@ import Blog from "./components/Blog"; // ✅ renamed to Blog (singular)
 import BlogDetail from "./components/BlogDetail";
  
 // Component to handle route changes
-const RouteChangeHandler = ({ children }) => {
+const RouteChangeHandler: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
