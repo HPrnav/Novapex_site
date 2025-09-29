@@ -171,7 +171,7 @@ const Portfolio = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-[#00C08B] mb-2">20+</div>
-              <div className="text-gray-600">Websites Created</div>
+              <div className="text-gray-600">Web-Apps Created</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-[#00C08B] mb-2">10+</div>
@@ -267,22 +267,33 @@ const Portfolio = () => {
               </div>
 
               {/* Technologies */}
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Code className="h-6 w-6 text-[#00C08B] mr-2" />
-                  Technologies Used
-                </h3>
-                <div className="flex flex-wrap gap-3">
-                  {selectedProject.technologies.map((tech, index) => (
-                    <span 
-                      key={index}
-                      className="bg-[#00C08B] bg-opacity-10 text-[#00a87a] px-4 py-2 rounded-lg font-medium flex items-center"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+           {/* Technologies */}
+<div className="mb-8">
+  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+    <Code className="h-6 w-6 text-[#00C08B] mr-2" />
+    Technologies Used
+  </h3>
+  <div className="flex flex-wrap gap-3 mb-3">
+    {selectedProject.technologies.map((tech, index) => (
+      <span 
+        key={index}
+        className="bg-[#00C08B] bg-opacity-10 text-[#00a87a] px-4 py-2 rounded-lg font-medium flex items-center"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  {/* Plain URL */}
+  {selectedProject.link && (
+    <p className="text-blue-600 underline break-all">
+      <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
+        {selectedProject.link}
+      </a>
+    </p>
+  )}
+</div>
+
 
               {/* Challenge & Solution */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">

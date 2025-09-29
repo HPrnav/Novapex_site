@@ -1,4 +1,4 @@
-import { useState, useCallback , useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { 
   Settings,
   X,
@@ -9,16 +9,12 @@ import {
 import data from '../data/data.json';
 import { Link } from "react-router-dom";
 
-
-
-
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({top:0,behavior:'smooth'})
+  })
 
-  useEffect(()=>{
-  window.scrollTo({top:0,behavior:'smooth'})
-})
-
-   const [selectedService, setSelectedService] = useState(null);
+  const [selectedService, setSelectedService] = useState(null);
   const { services } = data;
 
   const testimonials = [
@@ -37,7 +33,6 @@ const Services = () => {
       avatar: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     }
   ];
-
 
   const openServiceModal = (service) => {
     setSelectedService(service);
@@ -164,11 +159,11 @@ const Services = () => {
               <div className="bg-gradient-to-r from-[#00C08B] to-[#008C65] p-6 rounded-xl text-center">
                 <h3 className="text-xl font-bold text-white mb-4">Ready to get started?</h3>
                 <p className="text-white/90 mb-6">Contact us today to discuss your project requirements</p>
-               <Link to="/contact">
-  <button className="bg-white text-[#00C08B] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
-    Request a Quote
-  </button>
-</Link>
+                <Link to="/contact">
+                  <button className="bg-white text-[#00C08B] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
+                    Request a Quote
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -182,8 +177,19 @@ const Services = () => {
       {/* Background and decorative elements remain unchanged */}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero section remains unchanged */}
+        {/* Hero Section with Title */}
+        <div className="text-center mb-16">
+<h1 className="text-4xl md:text-5xl font-bold mb-6">
+  <span className="text-black">Our</span>{" "}
+  <span className="text-[#00C08B]">Services</span>
+</h1>
 
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover our comprehensive range of digital solutions designed to transform your business and drive growth
+          </p>
+        </div>
+
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
@@ -198,7 +204,7 @@ const Services = () => {
                     src={service.image} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 </div>
 
