@@ -33,15 +33,15 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed w-full h-1/6 z-50 transition-all duration-300 ${
+      <header className={`fixed w-full h-20 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-lg' 
           : isHomePage 
             ? 'bg-white shadow-sm' 
             : 'bg-transparent'
       }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-          <div className="flex justify-between items-center py-4">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-2">
+          <div className="flex justify-between items-center py-2">
             {/* Logo */}
             <NavLink 
               to="/" 
