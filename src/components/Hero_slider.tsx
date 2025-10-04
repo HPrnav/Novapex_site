@@ -18,7 +18,7 @@ function Hero_slider() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval); // cleanup on unmount
   }, []);
