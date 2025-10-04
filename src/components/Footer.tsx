@@ -11,7 +11,7 @@ import {
   ArrowUp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../Assets/LogoBT.png";
+import logo from "../Assets/LogoWT.png";
 
 const Footer = () => {
   const navigate = useNavigate();

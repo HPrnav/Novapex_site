@@ -33,94 +33,92 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed w-full h-1/6 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-          : isHomePage 
-            ? 'bg-white shadow-sm' 
-            : 'bg-transparent'
-      }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-          <div className="flex justify-between items-center py-4">
-            {/* Logo */}
-            <NavLink 
-              to="/" 
-              className="flex items-center"
-              onClick={closeMenu}
-            >
-              <img 
-                src={logo} 
-                alt="Logo" 
-                className="h-20 w-auto object-cover"
+  <header
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-lg"
+          : isHomePage
+          ? "bg-white shadow-sm"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <NavLink to="/" className="flex items-center" onClick={closeMenu}>
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-16 sm:h-20 w-auto object-contain"
+            />
+          </NavLink>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-6">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                className={({ isActive }) =>
+                  `text-sm font-bold transition-colors duration-200 ${
+                    isActive
+                      ? "text-[#00C08B]"
+                      : isScrolled || isHomePage
+                      ? "text-gray-900 hover:text-[#00C08B]"
+                      : "text-white hover:text-[#00C08B]"
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X
+                className={`h-6 w-6 ${
+                  isScrolled || isHomePage ? "text-gray-900" : "text-white"
+                }`}
               />
-            </NavLink>
+            ) : (
+              <Menu
+                className={`h-6 w-6 ${
+                  isScrolled || isHomePage ? "text-gray-900" : "text-white"
+                }`}
+              />
+            )}
+          </button>
+        </div>
 
-      {/* Desktop Navigation */}
-      <nav className="hidden md:flex space-x-6">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            className={({ isActive }) =>
-              `text-sm font-bold transition-colors duration-200 ${
-                isActive
-                  ? "text-[#00C08B]"
-                  : isScrolled || isHomePage
-                  ? "text-gray-900 hover:text-[#00C08B]"
-                  : "text-black hover:text-[#00C08B]"
-              }`
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
-      </nav>
-
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden p-2"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        aria-label="Toggle menu"
-      >
-        {isMenuOpen ? (
-          <X
-            className={`h-5 w-6 ${
-              isScrolled || isHomePage ? "text-gray-900" : "text-white"
-            }`}
-          />
-        ) : (
-          <Menu
-            className={`h-5 w-6 ${
-              isScrolled || isHomePage ? "text-gray-900" : "text-white"
-            }`}
-          />
+        {/* Mobile Navigation Dropdown */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg py-2 z-40">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `block w-full text-left px-4 py-3 font-bold transition-colors duration-200 ${
+                    isActive
+                      ? "bg-[#00C08B]/10 text-[#00C08B]"
+                      : "text-gray-900 hover:bg-gray-50 hover:text-[#00C08B]"
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </div>
         )}
-      </button>
-    </div>
-
-    {/* Mobile Navigation */}
-    {isMenuOpen && (
-      <div className="md:hidden bg-white rounded-lg shadow-lg mt-2 py-2">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.path}
-            to={item.path}
-            onClick={closeMenu}
-            className={({ isActive }) =>
-              `block w-full text-left px-4 py-3 font-bold transition-colors duration-200 ${
-                isActive
-                  ? "bg-[#00C08B]/10 text-[#00C08B]"
-                  : "text-gray-900 hover:bg-gray-50 hover:text-[#00C08B]"
-              }`
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
       </div>
-    )}
-  </div>
-</header>
+    </header>
 
 
 

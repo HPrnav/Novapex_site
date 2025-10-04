@@ -193,19 +193,19 @@ import { Coffee, Laptop, Heart, Trophy, Upload, Phone, Mail } from 'lucide-react
             </div>
             
             <div className="space-y-4">
-              <div className="flex items-center gap-3 p-3 bg-gray-100 rounded-md">
+              {/* <div className="flex items-center gap-3 p-3 bg-gray-100 rounded-md">
                 <Phone className="h-5 w-5 text-[#00C08B]" />
                 <div>
                   <p className="font-medium">Contact Number</p>
                   <p className="text-sm text-gray-600">+91-2269718996</p>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 p-3 bg-gray-100 rounded-md">
                 <Mail className="h-5 w-5 text-[#00C08B]" />
                 <div>
                   <p className="font-medium">Email</p>
 <Link to="/contact" className="text-sm text-gray-600 hover:underline">
-  contact@novapexhub.com
+  hr@novapexhub.com
 </Link>                </div>
               </div>
               
