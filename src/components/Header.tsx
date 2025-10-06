@@ -65,7 +65,7 @@ const Header = () => {
                       ? "text-[#00C08B]"
                       : isScrolled || isHomePage
                       ? "text-gray-900 hover:text-[#00C08B]"
-                      : "text-white hover:text-[#00C08B]"
+                      : "text-black hover:text-[#00C08B]"
                   }`
                 }
               >
@@ -83,7 +83,7 @@ const Header = () => {
             {isMenuOpen ? (
               <X
                 className={`h-6 w-6 ${
-                  isScrolled || isHomePage ? "text-gray-900" : "text-white"
+                  isScrolled || isHomePage ? "text-gray-900" : "text-black"
                 }`}
               />
             ) : (
