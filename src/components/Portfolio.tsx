@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { 
   ExternalLink,  Calendar, Users, Code, X, ArrowRight, Zap, Shield, ChevronRight,
-   Server, Cpu, BarChart2, Award 
+   Server, Cpu,  Award 
   } from 'lucide-react';
 
 import data from '../data/data.json'
