@@ -89,7 +89,7 @@ const Header = () => {
             ) : (
               <Menu
                 className={`h-6 w-6 ${
-                  isScrolled || isHomePage ? "text-gray-900" : "text-white"
+                  isScrolled || isHomePage ? "text-gray-900" : "text-black"
                 }`}
               />
             )}
