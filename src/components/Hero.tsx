@@ -215,6 +215,70 @@ const NovapexPage = () => {
 
       {/* rotational technologies section  */}
       <Technologies></Technologies>
+{/* Our Esteemed Partners & Clients Section */}
+{/* Our Esteemed Partners & Clients Section */}
+<section
+  id="partners"
+  className="relative py-20 overflow-hidden bg-gradient-to-br from-white via-blue-50 to-indigo-100 transition-colors duration-500"
+>
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold">
+        Our Esteemed Partners & Clients
+      </h2>
+      <p className="mt-4 text-lg text-gray-600">
+        Trusted by leading organizations and global innovators who collaborate
+        with Novapex for success 🌍
+      </p>
+    </div>
+
+    {/* Sliding Logo Rows */}
+    <div className="space-y-10">
+      {[0, 1].map((rowIndex) => (
+        <div
+          key={rowIndex}
+          className="flex items-center space-x-10 whitespace-nowrap overflow-hidden group"
+        >
+          <div
+            className={`flex space-x-10 ${
+              rowIndex % 2 === 0
+                ? "animate-railway"
+                : "animate-railway-reverse"
+            }`}
+          >
+            {[
+              "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+              "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+              
+            ]
+              .concat([
+                "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+                "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+                "https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNvbXBhbnklMjBsb2dvfGVufDB8fDB8fHww",
+              ])
+              .map((logo, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-center justify-center bg-white/70 backdrop-blur-sm shadow-lg px-8 py-6 rounded-2xl min-w-[160px] hover:scale-105 transition-transform"
+                >
+                  <img
+                    src={logo}
+                    alt={`Partner ${i}`}
+                    className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition duration-300"
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* Client review section */}
       <Client/>

@@ -642,7 +642,7 @@
       "title": "BookEasy - Online Booking Platform",
       "category": "Booking",
       "description": "A seamless online booking platform for hotels, travel, and events with real-time availability, secure payments, and personalized recommendations.",
-      "image": "https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F9a7b3b4b-088a-482b-9a94-33c1735e1f91%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4QZE4I5HUY%252F20251006%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20251006T063635Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D31718f9eaa1a928ec57a0a49d9386c5c6df3a03b67089c35e56b7a02ef02a481&sign=mr1Seaohxj5kfmyOxJkNGXlIWo8PIqZR9OAor2Pok0M",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFwcG9pbnRtZW50fGVufDB8fDB8fHww",
       "technologies": ["React", "Next.js", "Node.js", "MongoDB", "Stripe", "Firebase"],
       "link": "https://bookeasy.citioffers.in/",
       "duration": "5 months",
@@ -927,7 +927,7 @@
         "initials": "DA",
         "role": "Technical Lead & Co-Founder",
         "shortRole": "Technical Lead & Developer",
-        "description": "Daila brings technical expertise and innovation to Novapex Infohub. With a strong background in development and technology solutions, she ensures that projects are built with cutting-edge technologies and robust architecture. Her attention to detail and problem-solving skills make her an invaluable part of our team."
+        "description": "Rasika brings technical expertise and innovation to Novapex Infohub. With a strong background in development and technology solutions, she ensures that projects are built with cutting-edge technologies and robust architecture. Her attention to detail and problem-solving skills make her an invaluable part of our team."
       }
     ],
     "values": [

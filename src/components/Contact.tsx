@@ -17,6 +17,11 @@ const Contact = () => {
   const [popup, setPopup] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
   const [errors, setErrors] = useState<{ phone?: string; message?: string }>({});
 
+  // Scroll to top only when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array means this runs only once on mount
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
@@ -103,10 +108,6 @@ const Contact = () => {
   ];
 
   const services = data.contact_services;
-
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  })
 
   return (
     <section id="contact" className="py-20 bg-gray-50 relative">

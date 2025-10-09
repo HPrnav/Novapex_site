@@ -18,7 +18,7 @@ function Hero_slider() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 8000);
+    }, 5000);
 
     return () => clearInterval(interval); 
   }, []);
@@ -68,14 +68,35 @@ function Hero_slider() {
           className="space-y-3 sm:space-y-5"
         >
           {/* 🔹 Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-extrabold leading-snug text-white drop-shadow-lg">
-            {heroSlides[currentSlide].title}
-          </h1>
+        <h1
+  className="text-xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
+             font-extrabold leading-snug text-white drop-shadow-lg 
+             break-words text-balance px-2"
+>
+  {heroSlides[currentSlide].title}
+</h1>
 
-          {/* 🔹 Subtitle */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            {heroSlides[currentSlide].subtitle}
-          </p>
+{/* 🔹 Subtitle */}
+{/* 🔹 Title */}
+{/* <h1
+  className="text-xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
+             font-extrabold leading-snug text-white drop-shadow-lg 
+             break-words whitespace-normal 
+             max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-2"
+>
+  {heroSlides[currentSlide].title}
+</h1> */}
+
+{/* 🔹 Subtitle */}
+<p
+  className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 
+             text-gray-200 leading-relaxed px-2 text-center
+             break-words whitespace-normal 
+             max-w-[16rem] sm:max-w-lg md:max-w-2xl mx-auto"
+>
+  {heroSlides[currentSlide].subtitle}
+</p>
+
         </motion.div>
 
         {/* 🔹 Slider Indicators */}
