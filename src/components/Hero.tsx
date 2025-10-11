@@ -234,46 +234,35 @@ const NovapexPage = () => {
     </div>
 
     {/* Sliding Logo Rows */}
-    <div className="space-y-10">
-      {[0, 1].map((rowIndex) => (
-        <div
-          key={rowIndex}
-          className="flex items-center space-x-10 whitespace-nowrap overflow-hidden group"
-        >
-          <div
-            className={`flex space-x-10 ${
-              rowIndex % 2 === 0
-                ? "animate-railway"
-                : "animate-railway-reverse"
-            }`}
-          >
-            {[
-              "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-              "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-              
-            ]
-              .concat([
-                "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-                "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-                "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-                "https://images.unsplash.com/photo-1661347998423-b15d37d6f61e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNvbXBhbnklMjBsb2dvfGVufDB8fDB8fHww",
-              ])
-              .map((logo, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center bg-white/70 backdrop-blur-sm shadow-lg px-8 py-6 rounded-2xl min-w-[160px] hover:scale-105 transition-transform"
-                >
-                  <img
-                    src={logo}
-                    alt={`Partner ${i}`}
-                    className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition duration-300"
-                  />
-                </div>
-              ))}
-          </div>
-        </div>
-      ))}
-    </div>
+  {/* Continuous Sliding Logo Row */}
+<div className="overflow-hidden bg-gray-50 py-8">
+  <div className="flex animate-slide-rtl">
+    {[
+      "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/untitled-design-3-AzGX726E2VH2ENZj.svg",
+      "https://assets.zyrosite.com/YyvZokX3DrfL9G1K/fitwithpooja_20250119_154743_0000-dJo56BPMZBfzV8L3.svg",
+      "https://techlustergroup.com/wp-content/uploads/2022/03/TL_Logo.gif",
+      "https://iglookids.in/wp-content/uploads/2020/12/cropped-Iglookids_New-Logo.png",
+      "https://technofriends.co.in/img/logo.jpg",
+      "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
+    ].concat([
+      "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/untitled-design-3-AzGX726E2VH2ENZj.svg",
+      "https://assets.zyrosite.com/YyvZokX3DrfL9G1K/fitwithpooja_20250119_154743_0000-dJo56BPMZBfzV8L3.svg",
+      "https://techlustergroup.com/wp-content/uploads/2022/03/TL_Logo.gif",
+      "https://iglookids.in/wp-content/uploads/2020/12/cropped-Iglookids_New-Logo.png",
+      "https://technofriends.co.in/img/logo.jpg",
+      "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
+    ]).map((logo, i) => (
+      <img
+        key={i}
+        src={logo}
+        alt={`logo-${i}`}
+        className="h-24 w-auto mx-6 inline-block object-contain flex-shrink-0"
+      />
+    ))}
+  </div>
+</div>
+
+
   </div>
 </section>
 

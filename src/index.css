@@ -176,3 +176,19 @@ h1, h2, h3 {
     font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600; /* semi-bold */
 }
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-rtl {
+  animation: slideRightToLeft 30s linear infinite;
+}
+
+.animate-slide-rtl:hover {
+  animation-play-state: paused;
+}
