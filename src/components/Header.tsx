@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../Assets/LogoBT.png'
+import logo from '../Assets/novapex.svg'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

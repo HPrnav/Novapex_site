@@ -445,7 +445,7 @@
     },
     {
       "id": 3,
-      "title": "FitTrack Gym Management System",
+      "title": "Fit With Pooja Gym",
       "category": "Gym",
       "description": "A comprehensive gym management platform with member tracking, class scheduling, workout analytics, and payment processing.",
       "image": "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -745,13 +745,6 @@
     "cta": "View Portfolio"
   },
   {
-    "id": 4,
-    "title": "AI-Powered Solutions",
-    "subtitle": "Leveraging artificial intelligence to automate workflows, enhance decision-making, and drive innovation",
-    "image": "https://plus.unsplash.com/premium_photo-1683121718643-fb18d2668d53?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "cta": "Discover AI"
-  },
-  {
     "id": 2,
     "title": "Mobile App Innovation",
     "subtitle": "Native and cross-platform applications for seamless user experiences",
@@ -766,13 +759,28 @@
     "cta": "See Designs"
   },
   {
+    "id": 4,
+    "title": "AI-Powered Solutions",
+    "subtitle": "Leveraging artificial intelligence to automate workflows, enhance decision-making, and drive innovation",
+    "image": "https://plus.unsplash.com/premium_photo-1683121718643-fb18d2668d53?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "cta": "Discover AI"
+  },
+  {
     "id": 5,
     "title": "Our Creative Team",
     "subtitle": "A passionate group of innovators, developers, and designers working together to bring your vision to life",
     "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     "cta": "Meet the Team"
+  },
+  {
+    "id": 6,
+    "title": "Save Smarter, Grow Faster",
+    "subtitle": "Empowering you to manage finances wisely and achieve financial freedom",
+    "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=1200&ixlib=rb-4.1.0",
+    "cta": "Start Saving"
   }
 ]
+
 
     ,
 "contact_services" : [
@@ -788,27 +796,29 @@
     "Consulting Services"
   ]
 ,
- "blogPosts": [
+"blogPosts": [
   {
     "id": 1,
     "title": "How AI is Transforming Businesses",
     "description": "AI is helping companies automate tasks, improve customer experiences, and make data-driven decisions.",
-    "fullContent": "Artificial Intelligence (AI) is no longer a futuristic concept—it is now a transformative force reshaping businesses across industries. From automating routine tasks to uncovering deep insights through data analysis, AI is revolutionizing the way companies operate, making processes more efficient, cost-effective, and customer-centric. Organizations that embrace AI early are gaining a significant competitive advantage, while those slow to adopt risk being left behind.One of the most visible areas of AI adoption is customer service automation. AI-powered chatbots and virtual assistants are helping businesses provide instant support, answer queries 24/7, and reduce operational costs. Beyond customer service, AI is driving predictive analytics, enabling companies to forecast market trends, optimize inventory, and make data-driven decisions with unprecedented accuracy.Process automation is another critical area. By automating repetitive, time-consuming tasks, businesses can free up human employees to focus on strategic and creative activities. This not only improves operational efficiency but also boosts employee satisfaction and productivity. AI also allows for personalized marketing campaigns, tailoring content and offers to individual customer preferences, which drives engagement and conversion rates.In addition, AI plays a key role in enhancing cybersecurity. By monitoring vast amounts of data in real time, AI can detect anomalies, prevent potential breaches, and respond to threats faster than traditional methods.As AI continues to evolve, businesses that strategically integrate AI into their workflows will benefit from improved productivity, better decision-making, and stronger customer relationships. The future belongs to those who understand how to leverage AI not just as a tool but as a core component of their business strategy. The opportunities are endless, and organizations that act now will be best positioned to thrive in the AI-driven economy.",
+    "fullContent": "Artificial Intelligence (AI) is no longer a futuristic concept—it is now a transformative force reshaping businesses across industries. From automating routine tasks to uncovering deep insights through data analysis, AI is revolutionizing the way companies operate, making processes more efficient, cost-effective, and customer-centric. Organizations that embrace AI early are gaining a significant competitive advantage, while those slow to adopt risk being left behind. Companies like Novapex Infohub are leading the way in implementing practical AI solutions for business growth and innovation. Novapex Infohub focuses on bringing advanced automation, intelligent analytics, and custom AI tools that help organizations boost performance. One of the most visible areas of AI adoption, championed by Novapex Infohub, is customer service automation. AI-powered chatbots and virtual assistants designed by Novapex Infohub are helping businesses provide instant support, answer queries 24/7, and reduce operational costs. Beyond customer service, Novapex Infohub leverages predictive analytics, enabling companies to forecast market trends, optimize inventory, and make data-driven decisions with accuracy. Process automation is another critical area where Novapex Infohub enables businesses to free up human employees to focus on strategic and creative activities. This not only improves operational efficiency but also boosts employee satisfaction and productivity. AI also allows for personalized marketing campaigns—something Novapex Infohub helps businesses achieve by tailoring content and offers to customer preferences, driving engagement and conversion rates. In addition, Novapex Infohub integrates AI for enhanced cybersecurity, monitoring vast amounts of data in real time to detect anomalies, prevent breaches, and respond to threats faster than ever. As AI continues to evolve, Novapex Infohub ensures that businesses stay ahead, benefiting from improved productivity, better decision-making, and stronger customer relationships.",
     "date": "Sep 3, 2025",
     "category": "Technology",
-    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80", 
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1170&q=80",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "5 min read",
     "author": "Pranav Hore",
-    "authorRole": "Software and Gen AI developer "
+    "authorRole": "Software and Gen AI Developer"
   },
   {
     "id": 2,
     "title": "Top Services Every Tech Company Should Offer",
     "description": "From cloud solutions to AI-driven analytics, discover the must-have services for modern businesses.",
-    "fullContent": "In today’s fast-paced digital world, tech companies must provide comprehensive services that address the diverse needs of modern businesses. The most successful firms go beyond offering products—they deliver end-to-end solutions that enable clients to navigate the complex landscape of digital transformation effectively.One essential service is cloud migration and management, helping businesses scale efficiently and maintain reliable operations. Custom software development ensures solutions are tailored to meet the unique requirements of clients, improving operational efficiency. Data analytics and business intelligence allow organizations to leverage insights from their data, driving informed decision-making and identifying new growth opportunities.Cybersecurity solutions are critical as cyber threats become increasingly sophisticated. Companies offering robust security measures provide peace of mind to clients while protecting their data and systems. IoT integration services help businesses harness connected devices to improve operations, gather insights, and enhance customer experiences. Finally, AI and machine learning implementation enables organizations to optimize processes, automate tasks, and personalize services at scale.By offering these services, tech companies position themselves as strategic partners rather than simple vendors. Building long-term relationships through these offerings strengthens client trust and ensures continued business growth. Companies that adopt this approach not only stay competitive but also drive innovation across industries, helping clients thrive in the rapidly evolving technology landscape.",
+    "fullContent": "In today’s fast-paced digital world, tech companies must provide comprehensive services that address the diverse needs of modern businesses. The most successful firms go beyond offering products—they deliver end-to-end solutions that enable clients to navigate the complex landscape of digital transformation effectively. Novapex Infohub exemplifies this approach, providing AI, cloud, and software services tailored for scalability and innovation. Novapex Infohub helps businesses with cloud migration, custom software, cybersecurity, and IoT integration to stay ahead in the market. One essential service offered by Novapex Infohub is cloud migration and management, helping businesses scale efficiently and maintain reliable operations. Custom software development by Novapex Infohub ensures that every client’s needs are met with precision and innovation. Data analytics and business intelligence services by Novapex Infohub allow organizations to leverage data insights for better decisions. Cybersecurity solutions are critical as cyber threats evolve; Novapex Infohub offers robust security measures that provide peace of mind to clients. IoT integration services from Novapex Infohub help businesses harness connected devices to improve operations and customer experiences. Finally, AI and machine learning implementation by Novapex Infohub enables organizations to optimize processes, automate workflows, and personalize services at scale.",
     "date": "Aug 20, 2025",
     "category": "Services",
-    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80", 
+    "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1170&q=80",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "7 min read",
     "author": "Harish Ghenge",
     "authorRole": "Salesforce Developer"
@@ -817,22 +827,24 @@
     "id": 3,
     "title": "The Future of Work with AI",
     "description": "Artificial Intelligence is reshaping industries. Learn how your company can stay ahead.",
-    "fullContent": "Artificial Intelligence is reshaping the workplace in profound ways, creating opportunities for innovation while augmenting human capabilities rather than replacing them. The future of work is being defined by a blend of human creativity and AI-driven efficiency, requiring organizations to adapt rapidly.Hybrid human-AI teams are becoming the norm, combining human judgment and empathy with AI-powered analysis and automation. Remote work, enhanced by AI tools, is enabling greater flexibility while maintaining productivity. Organizations are increasingly emphasizing continuous learning and skill development to equip employees with the capabilities needed for AI-enabled roles.Routine tasks are being automated, allowing employees to focus on strategic and creative initiatives that drive growth and innovation. AI-powered platforms also facilitate better decision-making by analyzing large datasets and generating actionable insights in real time. Additionally, companies are adopting AI for performance tracking, employee engagement, and productivity optimization.Organizations that proactively embrace AI-driven workplace strategies will thrive in the coming years. Those that resist or fail to integrate AI effectively may struggle to compete in increasingly competitive markets. By fostering collaboration between humans and machines, businesses can enhance productivity, encourage innovation, and maintain a workforce that is skilled, motivated, and prepared for the future.",
+    "fullContent": "Artificial Intelligence is reshaping the workplace in profound ways, creating opportunities for innovation while augmenting human capabilities. The future of work is being defined by a blend of human creativity and AI-driven efficiency, requiring organizations to adapt rapidly. Companies like Novapex Infohub are pioneering hybrid work models enhanced by AI to empower teams worldwide. Novapex Infohub integrates intelligent systems that combine human expertise with machine learning to enhance decision-making and productivity. Hybrid human-AI teams are becoming the norm, and Novapex Infohub is helping organizations create balanced ecosystems of people and technology. Remote work powered by Novapex Infohub’s AI tools enables greater flexibility and collaboration. With Novapex Infohub’s focus on continuous learning and AI-driven skill development, employees gain the knowledge they need for future-ready roles. As AI continues to redefine workplaces, Novapex Infohub remains committed to helping companies evolve and thrive in this new era.",
     "date": "Aug 10, 2025",
     "category": "Innovation",
-    "image": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?q=80&w=1030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "image": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?q=80&w=1030&auto=format&fit=crop",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "6 min read",
-    "author": "Dr.Aashish Kasar",
-    "authorRole": "AI specilist"
+    "author": "Dr. Aashish Kasar",
+    "authorRole": "AI Specialist"
   },
   {
     "id": 4,
     "title": "Cloud Computing Trends for 2025",
     "description": "Discover the latest developments in cloud technology and how they impact business operations.",
-    "fullContent": "Cloud computing continues to evolve rapidly, providing businesses with scalable, secure, and efficient solutions. Staying current with emerging trends is essential for organizations seeking a competitive edge in a digital-first world.One major trend is the adoption of multi-cloud and hybrid cloud strategies, enabling businesses to leverage multiple providers for flexibility, cost efficiency, and risk mitigation. Serverless computing is gaining popularity, allowing developers to focus on building applications without managing infrastructure. Edge computing integration brings processing closer to data sources, enhancing speed and reducing latency for critical operations.AI-powered cloud management tools are streamlining resource allocation, optimizing performance, and predicting infrastructure needs. Enhanced security and compliance features are becoming standard, helping companies protect sensitive data and meet regulatory requirements. Moreover, sustainable cloud solutions are gaining traction, enabling businesses to reduce energy consumption and adopt environmentally friendly practices.These developments make cloud computing more accessible and impactful than ever before. Companies leveraging these trends can increase operational efficiency, improve security, and maintain a competitive advantage. By embracing cloud innovations, organizations are well-positioned to navigate future challenges while delivering reliable, high-quality services to customers worldwide.",
+    "fullContent": "Cloud computing continues to evolve rapidly, providing businesses with scalable, secure, and efficient solutions. Staying current with emerging trends is essential for organizations seeking a competitive edge. Novapex Infohub, a leader in cloud innovation, helps companies adopt flexible, cost-effective, and secure cloud strategies. Novapex Infohub supports businesses with hybrid and multi-cloud setups, enabling maximum scalability and reliability. One major trend promoted by Novapex Infohub is the adoption of multi-cloud strategies, which offer flexibility, cost efficiency, and risk mitigation. Serverless computing is gaining popularity, and Novapex Infohub helps organizations deploy applications efficiently without managing infrastructure. With Novapex Infohub’s expertise in edge computing, businesses can bring processing closer to data sources for faster operations and lower latency. Through its cloud-first approach, Novapex Infohub ensures that organizations leverage modern technologies for lasting digital growth.",
     "date": "Jul 28, 2025",
     "category": "Technology",
-    "image": "https://images.unsplash.com/photo-1667984390527-850f63192709?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "image": "https://images.unsplash.com/photo-1667984390527-850f63192709?q=80&w=1032&auto=format&fit=crop",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "8 min read",
     "author": "Pranav Mahajan",
     "authorRole": "Cloud Architect"
@@ -841,27 +853,44 @@
     "id": 5,
     "title": "Cybersecurity Best Practices",
     "description": "Essential strategies to protect your business from evolving cyber threats in the digital age.",
-    "fullContent": "As cyber threats continue to evolve, businesses must adopt proactive strategies to protect their data, systems, and reputation. A strong cybersecurity posture is no longer optional—it is essential for sustaining operations and maintaining customer trust.Regular security assessments and audits help identify vulnerabilities before attackers can exploit them. Educating employees through training and awareness programs ensures staff are vigilant against phishing attacks, malware, and social engineering threats. Implementing multi-factor authentication adds an extra layer of security to prevent unauthorized access.Data encryption, both at rest and in transit, ensures sensitive information remains protected. Establishing an incident response plan allows organizations to respond quickly and effectively to breaches, minimizing damage. Finally, regular software updates and patch management reduce the risk of security vulnerabilities being exploited by malicious actors.Businesses that adopt these best practices not only reduce the likelihood of cyber incidents but also demonstrate responsibility and build trust with clients and partners. A comprehensive, proactive cybersecurity approach is essential for surviving in today’s digital landscape, enabling companies to operate securely and confidently. Organizations that prioritize cybersecurity will be better equipped to face emerging threats and maintain resilience in the ever-changing digital environment.",
+    "fullContent": "As cyber threats continue to evolve, businesses must adopt proactive strategies to protect their data, systems, and reputation. A strong cybersecurity posture is essential for sustaining operations and maintaining customer trust. Novapex Infohub emphasizes building resilient digital ecosystems that safeguard clients from advanced cyberattacks. Novapex Infohub’s security experts conduct regular assessments and audits to identify vulnerabilities before they can be exploited. Educating employees through Novapex Infohub’s training and awareness programs ensures that teams stay vigilant against phishing, malware, and social engineering attacks. With a deep understanding of modern threats, Novapex Infohub provides end-to-end cybersecurity services, helping organizations stay secure in an increasingly connected world.",
     "date": "Jul 15, 2025",
     "category": "Security",
-    "image": "https://images.unsplash.com/photo-1614064548237-096f735f344f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+    "image": "https://images.unsplash.com/photo-1614064548237-096f735f344f?q=80&w=870&auto=format&fit=crop",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "9 min read",
-    "author": "Pawan wagh",
+    "author": "Vikas Damre",
     "authorRole": "Security Expert"
   },
   {
     "id": 6,
     "title": "Digital Transformation Strategies",
     "description": "How to successfully navigate the process of digital transformation in your organization.",
-    "fullContent": "Digital transformation is more than adopting new technologies—it is about fundamentally changing how organizations operate and deliver value to customers. Companies that successfully navigate this process gain a competitive edge, improve customer experience, and foster innovation across all levels.A successful transformation begins with developing a clear digital vision and roadmap, setting priorities, and aligning teams on goals. Cultivating a culture of innovation and adaptability ensures employees are open to change and actively contribute to transformation initiatives. Investing in the right technology stack supports scalable, efficient operations while enabling new business opportunities.Prioritizing customer experience ensures that technological adoption results in tangible value for clients. Building cross-functional teams fosters collaboration, breaking down silos and driving effective decision-making. Finally, measuring progress using relevant KPIs ensures initiatives are on track and can be adjusted as necessary to maximize outcomes.Organizations approaching digital transformation holistically—aligning technology, culture, and strategy—are far more likely to succeed. Those that focus solely on technology risk incomplete or ineffective change. By embracing transformation fully, businesses can achieve sustainable growth, improve operational efficiency, and enhance their ability to respond to rapidly changing market demands. Digital transformation is not just a trend—it is a strategic imperative for long-term success.",
+    "fullContent": "Digital transformation is more than adopting new technologies—it’s about fundamentally changing how organizations operate and deliver value. Companies that work with Novapex Infohub gain a competitive edge through innovation, improved customer experiences, and operational efficiency. Novapex Infohub partners with organizations to guide them through every stage of digital transformation—from strategy design to seamless execution. With Novapex Infohub’s proven expertise in AI, cloud, and automation, businesses can reimagine their workflows and drive measurable results. The company’s approach ensures that every transformation aligns with long-term goals, making Novapex Infohub a trusted partner for digital success.",
     "date": "Jun 30, 2025",
     "category": "Business",
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80", 
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1170&q=80",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
     "readTime": "10 min read",
-    "author": "Piyush Dalal",
+    "author": "Dhiraj Dhole",
     "authorRole": "Transformation Consultant"
+  },
+  {
+    "id": 7,
+    "title": "Novapex Infohub – Driving Digital Excellence",
+    "description": "Discover how Novapex Infohub is empowering businesses through innovation, AI, and technology-driven transformation.",
+    "fullContent": "Novapex Infohub stands at the forefront of digital transformation, combining expertise in artificial intelligence, cloud solutions, and custom software to help organizations modernize and scale effectively. By integrating cutting-edge technologies with human-centered strategies, Novapex Infohub enables businesses to unlock new opportunities, enhance productivity, and drive long-term growth. The mission of Novapex Infohub is to simplify complex digital journeys and help clients embrace innovation with confidence. Whether through AI-powered automation, advanced cybersecurity frameworks, or scalable cloud infrastructures, Novapex Infohub consistently delivers measurable value. As a trusted technology partner, Novapex Infohub continues to redefine what it means to achieve digital excellence in the modern era.",
+    "date": "Oct 15, 2025",
+    "category": "Corporate",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1170&q=80",
+    "companyImage": "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/novapex-infohub-logo-AzGX7289YVH2.png",
+    "readTime": "6 min read",
+    "author": "Novapex Infohub Editorial Team",
+    "authorRole": "Corporate Communications"
   }
 ]
+
+
 ,
 
   "about": {
