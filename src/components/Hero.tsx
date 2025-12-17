@@ -242,15 +242,15 @@ const NovapexPage = () => {
       "https://assets.zyrosite.com/YyvZokX3DrfL9G1K/fitwithpooja_20250119_154743_0000-dJo56BPMZBfzV8L3.svg",
       "https://techlustergroup.com/wp-content/uploads/2022/03/TL_Logo.gif",
       "https://iglookids.in/wp-content/uploads/2020/12/cropped-Iglookids_New-Logo.png",
-      "https://technofriends.co.in/img/logo.jpg",
-      "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
+      // "https://technofriends.co.in/img/logo.jpg",
+      // "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
     ].concat([
       "https://assets.zyrosite.com/mP4OPbz1DwinPpo8/untitled-design-3-AzGX726E2VH2ENZj.svg",
       "https://assets.zyrosite.com/YyvZokX3DrfL9G1K/fitwithpooja_20250119_154743_0000-dJo56BPMZBfzV8L3.svg",
       "https://techlustergroup.com/wp-content/uploads/2022/03/TL_Logo.gif",
       "https://iglookids.in/wp-content/uploads/2020/12/cropped-Iglookids_New-Logo.png",
-      "https://technofriends.co.in/img/logo.jpg",
-      "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
+      // "https://technofriends.co.in/img/logo.jpg",
+      // "https://lh3.googleusercontent.com/sitesv/AICyYdYshBFZofOLf8sluaUO4CkebQDdy8IUe1tOGDe88abMaVqIQUj_ZKiJpaDX2EB1HLY1ONbr0cLACYhbnevwqxisY-6oHEo5fUMk_v3kYVbXeev5-lVFnYkE1-oYqD1L5GjeZOlTlTIxe6CXdPO7CJjZCtH_8dq0CjuyNb8RpTIO5zpe-LkubbZuHoU=w16383",
     ]).map((logo, i) => (
       <img
         key={i}
